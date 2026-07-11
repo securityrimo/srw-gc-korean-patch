@@ -1,0 +1,54 @@
+# 원본 및 결과 디스크 이미지
+*.iso
+*.gcm
+*.rvz
+*.wbfs
+*.nkit.*
+
+# 패치 및 외부 실행 파일
+*.xdelta
+*.xdelta3
+xdelta.exe
+xdelta3.exe
+
+# 추출·재구성 바이너리
+*.dol
+*.pak
+*.bin
+*.bnr
+*.arc
+*.dat
+*.raw
+*.img
+
+# 전체 덤프 및 로컬 작업 데이터
+work/
+output/
+build/
+dist/
+extract*/
+dump*/
+screenshots/
+*.log
+*.tmp
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 편집기 및 운영체제
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 비밀 정보와 로컬 환경
+.env
+.env.*
+!.env.example
+*.key
+*.pem

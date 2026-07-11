@@ -1,0 +1,40 @@
+{
+  "schema": "srw-gc-korean-release-v1",
+  "version": "1.0.0",
+  "game": {
+    "title": "슈퍼로봇대전 GC",
+    "region": "Japan",
+    "game_id": "GRWJD9"
+  },
+  "source": {
+    "size": 1459978240,
+    "sha256": "AD4CB99FFB3C0383802A2AB87963F98BA417DFC5184ED3FE3DFE077DA02DB229"
+  },
+  "result": {
+    "size": 1459978240,
+    "sha256": "4B8B16CF643AA0A36D6F02E9264765063A59FBCE2396DAE5F1836F298FBA0166"
+  },
+  "patch": {
+    "filename": "SRW_GC_Korean_v1.0.0.xdelta",
+    "format": "VCDIFF/xdelta3",
+    "size": 109683357,
+    "sha256": "CE9CA387D60F37900AF9A17387A272E70F2D8F30FA620D1A59E1A57159A22222",
+    "secondary_compressor": "lzma",
+    "application_header": false
+  },
+  "canonical_protagonist_names": {
+    "male": "아카츠키 아키미",
+    "female": "아카츠키 아케미"
+  },
+  "audit": {
+    "runtime_base": "Japanese retail",
+    "verified_text_payloads": 62506,
+    "verification_failures": 0,
+    "decoded_japanese_residuals": 0,
+    "known_english_patch_marker_hits": 0,
+    "unchanged_japanese_retail_files": 277,
+    "approved_dol_code_byte_changes": 226,
+    "unapproved_dol_code_byte_changes": 0,
+    "xdelta_roundtrip_sha256_match": true
+  }
+}
