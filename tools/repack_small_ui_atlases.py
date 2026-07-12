@@ -11,6 +11,10 @@ bits 10/11 for horizontal/vertical flips.
 The input container is never modified in place.  Its size, pointer table,
 block offsets, BMP headers, palette blocks, and all blocks outside the chosen
 atlas groups are guarded byte-for-byte.
+
+This builder produces a visual-reference intermediate.  Because it renumbers
+existing atlas tiles, its output must be passed through
+``repack_preserve_indices.py`` before it can be used by the game.
 """
 
 from __future__ import annotations

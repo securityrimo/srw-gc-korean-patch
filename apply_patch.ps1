@@ -11,9 +11,9 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$PatchFileName = 'SRW_GC_Korean_v1.0.1.xdelta'
+$PatchFileName = 'SRW_GC_Korean_v1.0.2.xdelta'
 $ExpectedSourceSha256 = 'AD4CB99FFB3C0383802A2AB87963F98BA417DFC5184ED3FE3DFE077DA02DB229'
-$ExpectedFinalSha256 = '600AF6247FBDE1AE4C855ACFE6995BD0B3CD76536D3A1BB01366D8806D56451A'
+$ExpectedFinalSha256 = '1BFEE161B2DDABA0D3B150CCD08444127ABEABF9ADC5B0C91B01D12728E3965F'
 $ScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $PatchPath = Join-Path $ScriptRoot $PatchFileName
 
@@ -58,7 +58,7 @@ $ResolvedSource = (Resolve-Path -LiteralPath $SourceIso).Path
 $SourceItem = Get-Item -LiteralPath $ResolvedSource
 
 if ([string]::IsNullOrWhiteSpace($OutputIso)) {
-    $ResolvedOutput = Join-Path $SourceItem.DirectoryName 'Super Robot Taisen GC_Korean_v1.0.1.iso'
+    $ResolvedOutput = Join-Path $SourceItem.DirectoryName 'Super Robot Taisen GC_Korean_v1.0.2.iso'
 } else {
     $ResolvedOutput = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($OutputIso)
 }

@@ -15,6 +15,10 @@ Translation JSON format::
 
 Each mapped SCR is replaced as a complete canvas so no English glyph can
 survive or leak through shared tiles.
+
+The rebuilt atlas is a visual-reference intermediate only.  It renumbers
+pre-existing tiles that the game may select dynamically.  Never insert this
+output directly into an ISO; pass it to ``repack_preserve_indices.py``.
 """
 
 from __future__ import annotations

@@ -1,2 +1,3 @@
-Pillow>=10.0
+# UI raster hashes depend on Pillow/FreeType rendering details.
+Pillow==11.1.0
 rapidfuzz>=3.0
