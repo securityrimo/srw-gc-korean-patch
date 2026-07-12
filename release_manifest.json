@@ -1,6 +1,6 @@
 {
   "schema": "srw-gc-korean-release-v1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "game": {
     "title": "슈퍼로봇대전 GC",
     "region": "Japan",
@@ -12,13 +12,13 @@
   },
   "result": {
     "size": 1459978240,
-    "sha256": "4B8B16CF643AA0A36D6F02E9264765063A59FBCE2396DAE5F1836F298FBA0166"
+    "sha256": "600AF6247FBDE1AE4C855ACFE6995BD0B3CD76536D3A1BB01366D8806D56451A"
   },
   "patch": {
-    "filename": "SRW_GC_Korean_v1.0.0.xdelta",
+    "filename": "SRW_GC_Korean_v1.0.1.xdelta",
     "format": "VCDIFF/xdelta3",
-    "size": 109683357,
-    "sha256": "CE9CA387D60F37900AF9A17387A272E70F2D8F30FA620D1A59E1A57159A22222",
+    "size": 109690375,
+    "sha256": "687F3D076820259F015C54DE1CACBE5AD9AA7E37DED5E647B34EC1AF5386374D",
     "secondary_compressor": "lzma",
     "application_header": false
   },
@@ -32,6 +32,12 @@
     "verification_failures": 0,
     "decoded_japanese_residuals": 0,
     "known_english_patch_marker_hits": 0,
+    "ui_image_scr_total": 484,
+    "ui_image_replacements": 452,
+    "ui_image_preserved_nontext": 32,
+    "loading_image_replacements": 1,
+    "loading_texture_payloads": 8,
+    "loading_english_residual_pixels": 0,
     "unchanged_japanese_retail_files": 277,
     "approved_dol_code_byte_changes": 226,
     "unapproved_dol_code_byte_changes": 0,

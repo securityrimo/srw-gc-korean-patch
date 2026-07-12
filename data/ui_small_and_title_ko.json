@@ -1,0 +1,515 @@
+{
+  "schema": "srw-gc-ui-small-title-ko-v1",
+  "records": [
+    {
+      "bitmap_block": 334,
+      "block_index": 336,
+      "action": "replace_with_korean",
+      "korean_proposal": "공격"
+    },
+    {
+      "bitmap_block": 334,
+      "block_index": 337,
+      "action": "replace_with_korean",
+      "korean_proposal": "반격"
+    },
+    {
+      "bitmap_block": 334,
+      "block_index": 338,
+      "action": "replace_with_korean",
+      "korean_proposal": "회피"
+    },
+    {
+      "bitmap_block": 334,
+      "block_index": 339,
+      "action": "replace_with_korean",
+      "korean_proposal": "방어"
+    },
+    {
+      "bitmap_block": 334,
+      "block_index": 340,
+      "action": "replace_with_korean",
+      "korean_proposal": "원호"
+    },
+    {
+      "bitmap_block": 334,
+      "block_index": 341,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 358,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 359,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 360,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 361,
+      "action": "replace_with_korean",
+      "korean_proposal": "기량"
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 362,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 363,
+      "action": "replace_with_korean",
+      "korean_proposal": "격추 50"
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 364,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 365,
+      "action": "replace_with_korean",
+      "korean_proposal": "정신"
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 366,
+      "action": "replace_with_korean",
+      "korean_proposal": "격추 100"
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 367,
+      "action": "replace_with_korean",
+      "korean_proposal": "격추 150"
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 368,
+      "action": "replace_with_korean",
+      "korean_proposal": "격추 200"
+    },
+    {
+      "bitmap_block": 355,
+      "block_index": 369,
+      "action": "replace_with_korean",
+      "korean_proposal": "격추 250"
+    },
+    {
+      "bitmap_block": 433,
+      "block_index": 435,
+      "action": "replace_with_korean",
+      "korean_proposal": "포획 가능"
+    },
+    {
+      "bitmap_block": 433,
+      "block_index": 436,
+      "action": "replace_with_korean",
+      "korean_proposal": "포획 운용 가능"
+    },
+    {
+      "bitmap_block": 433,
+      "block_index": 437,
+      "action": "replace_with_korean",
+      "korean_proposal": "포획 불가"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 442,
+      "action": "replace_with_korean",
+      "korean_proposal": "명중"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 443,
+      "action": "replace_with_korean",
+      "korean_proposal": "치명타"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 444,
+      "action": "replace_with_korean",
+      "korean_proposal": "빗나감"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 445,
+      "action": "replace_with_korean",
+      "korean_proposal": "실드 방어"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 446,
+      "action": "replace_with_korean",
+      "korean_proposal": "베어내기"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 447,
+      "action": "replace_with_korean",
+      "korean_proposal": "빔 코트"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 448,
+      "action": "replace_with_korean",
+      "korean_proposal": "아이 필드"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 449,
+      "action": "replace_with_korean",
+      "korean_proposal": "분신"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 450,
+      "action": "replace_with_korean",
+      "korean_proposal": "카운터"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 451,
+      "action": "replace_with_korean",
+      "korean_proposal": "재머"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 452,
+      "action": "replace_with_korean",
+      "korean_proposal": "네오 게터 비전"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 453,
+      "action": "replace_with_korean",
+      "korean_proposal": "진 마하 스페셜"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 454,
+      "action": "replace_with_korean",
+      "korean_proposal": "합체 공격"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 455,
+      "action": "replace_with_korean",
+      "korean_proposal": "원호 공격"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 456,
+      "action": "replace_with_korean",
+      "korean_proposal": "연속 공격"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 457,
+      "action": "replace_with_korean",
+      "korean_proposal": "원호 방어"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 458,
+      "action": "replace_with_korean",
+      "korean_proposal": "파츠"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 459,
+      "action": "replace_with_korean",
+      "korean_proposal": "장갑 저하"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 460,
+      "action": "replace_with_korean",
+      "korean_proposal": "명중·회피 저하"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 461,
+      "action": "replace_with_korean",
+      "korean_proposal": "공격력 저하"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 462,
+      "action": "replace_with_korean",
+      "korean_proposal": "이동력 저하"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 463,
+      "action": "replace_with_korean",
+      "korean_proposal": "원호"
+    },
+    {
+      "bitmap_block": 438,
+      "block_index": 464,
+      "action": "replace_with_korean",
+      "korean_proposal": "포획"
+    },
+    {
+      "bitmap_block": 923,
+      "block_index": 925,
+      "action": "replace_with_korean",
+      "korean_proposal": "브이맥스"
+    },
+    {
+      "bitmap_block": 923,
+      "block_index": 926,
+      "action": "replace_with_korean",
+      "korean_proposal": "브이맥스 레드 파워"
+    },
+    {
+      "bitmap_block": 923,
+      "block_index": 927,
+      "action": "replace_with_korean",
+      "korean_proposal": "마징 파워"
+    },
+    {
+      "bitmap_block": 923,
+      "block_index": 928,
+      "action": "replace_with_korean",
+      "korean_proposal": "야성화"
+    },
+    {
+      "bitmap_block": 923,
+      "block_index": 929,
+      "action": "replace_with_korean",
+      "korean_proposal": "브이맥시멈"
+    },
+    {
+      "bitmap_block": 930,
+      "block_index": 932,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 930,
+      "block_index": 933,
+      "action": "replace_with_korean",
+      "korean_proposal": "인터미션"
+    },
+    {
+      "bitmap_block": 930,
+      "block_index": 934,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 947,
+      "block_index": 949,
+      "action": "replace_with_korean",
+      "korean_proposal": "자금"
+    },
+    {
+      "bitmap_block": 947,
+      "block_index": 950,
+      "action": "replace_with_korean",
+      "korean_proposal": "총 턴 수"
+    },
+    {
+      "bitmap_block": 947,
+      "block_index": 951,
+      "action": "replace_with_korean",
+      "korean_proposal": "제 화까지 완료"
+    },
+    {
+      "bitmap_block": 952,
+      "block_index": 955,
+      "action": "replace_with_korean",
+      "korean_proposal": "유닛"
+    },
+    {
+      "bitmap_block": 952,
+      "block_index": 956,
+      "action": "replace_with_korean",
+      "korean_proposal": "무기"
+    },
+    {
+      "bitmap_block": 952,
+      "block_index": 957,
+      "action": "replace_with_korean",
+      "korean_proposal": "파일럿"
+    },
+    {
+      "bitmap_block": 952,
+      "block_index": 958,
+      "action": "replace_with_korean",
+      "korean_proposal": "기타"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 963,
+      "action": "replace_with_korean",
+      "korean_proposal": "유닛 능력"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 964,
+      "action": "replace_with_korean",
+      "korean_proposal": "유닛 개조"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 965,
+      "action": "replace_with_korean",
+      "korean_proposal": "강화 파츠 장착"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 966,
+      "action": "replace_with_korean",
+      "korean_proposal": "상점"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 967,
+      "action": "replace_with_korean",
+      "korean_proposal": "유닛 환장"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 968,
+      "action": "replace_with_korean",
+      "korean_proposal": "무기 성능"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 969,
+      "action": "replace_with_korean",
+      "korean_proposal": "무기 개조"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 970,
+      "action": "replace_with_korean",
+      "korean_proposal": "파일럿 능력"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 971,
+      "action": "replace_with_korean",
+      "korean_proposal": "스킬 파츠"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 972,
+      "action": "replace_with_korean",
+      "korean_proposal": "파일럿 배치"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 973,
+      "action": "replace_with_korean",
+      "korean_proposal": "시스템 설정"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 974,
+      "action": "replace_with_korean",
+      "korean_proposal": "저장"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 975,
+      "action": "replace_with_korean",
+      "korean_proposal": "불러오기"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 976,
+      "action": "replace_with_korean",
+      "korean_proposal": "다음 미션"
+    },
+    {
+      "bitmap_block": 959,
+      "block_index": 977,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 2714,
+      "block_index": 2715,
+      "action": "replace_with_korean",
+      "korean_proposal": "제1화"
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3493,
+      "action": "replace_with_korean",
+      "korean_proposal": "시작 버튼을 누르세요"
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3494,
+      "action": "replace_with_korean",
+      "korean_proposal": "시작"
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3495,
+      "action": "replace_with_korean",
+      "korean_proposal": "불러오기"
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3496,
+      "action": "replace_with_korean",
+      "korean_proposal": "이어하기"
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3497,
+      "action": "replace_with_korean",
+      "korean_proposal": "설정"
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3498,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3499,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3500,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3501,
+      "action": "preserve",
+      "korean_proposal": ""
+    },
+    {
+      "bitmap_block": 3489,
+      "block_index": 3502,
+      "action": "preserve",
+      "korean_proposal": ""
+    }
+  ]
+}

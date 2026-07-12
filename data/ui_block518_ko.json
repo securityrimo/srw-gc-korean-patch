@@ -1,0 +1,1550 @@
+{
+  "schema": "srw-gc-ui-block518-ko-v1",
+  "expected_scr_count": 399,
+  "preserve_blocks": [
+    665,
+    709,
+    710,
+    763,
+    764,
+    765,
+    766,
+    767,
+    768,
+    769,
+    770,
+    771,
+    772,
+    773,
+    774,
+    803,
+    804,
+    818
+  ],
+  "records": [
+    {
+      "block_index": 524,
+      "korean": "파일럿 능력"
+    },
+    {
+      "block_index": 525,
+      "korean": "레벨"
+    },
+    {
+      "block_index": 526,
+      "korean": "기력"
+    },
+    {
+      "block_index": 527,
+      "korean": "다음"
+    },
+    {
+      "block_index": 528,
+      "korean": "정신"
+    },
+    {
+      "block_index": 529,
+      "korean": "격추 수"
+    },
+    {
+      "block_index": 530,
+      "korean": "능력"
+    },
+    {
+      "block_index": 531,
+      "korean": "격투"
+    },
+    {
+      "block_index": 532,
+      "korean": "사격"
+    },
+    {
+      "block_index": 533,
+      "korean": "방어"
+    },
+    {
+      "block_index": 534,
+      "korean": "기량"
+    },
+    {
+      "block_index": 535,
+      "korean": "명중"
+    },
+    {
+      "block_index": 536,
+      "korean": "회피"
+    },
+    {
+      "block_index": 537,
+      "korean": "특수 기능"
+    },
+    {
+      "block_index": 538,
+      "korean": "정신기"
+    },
+    {
+      "block_index": 539,
+      "korean": "스킬 파츠"
+    },
+    {
+      "block_index": 540,
+      "korean": "에이스"
+    },
+    {
+      "block_index": 541,
+      "korean": "유닛 능력"
+    },
+    {
+      "block_index": 542,
+      "korean": "지형"
+    },
+    {
+      "block_index": 543,
+      "korean": "크기"
+    },
+    {
+      "block_index": 544,
+      "korean": "유형"
+    },
+    {
+      "block_index": 545,
+      "korean": "본체"
+    },
+    {
+      "block_index": 546,
+      "korean": "머리"
+    },
+    {
+      "block_index": 547,
+      "korean": "팔"
+    },
+    {
+      "block_index": 548,
+      "korean": "다리"
+    },
+    {
+      "block_index": 549,
+      "korean": "에너지"
+    },
+    {
+      "block_index": 550,
+      "korean": "운동성"
+    },
+    {
+      "block_index": 551,
+      "korean": "장갑"
+    },
+    {
+      "block_index": 552,
+      "korean": "이동력"
+    },
+    {
+      "block_index": 553,
+      "korean": "수리비"
+    },
+    {
+      "block_index": 554,
+      "korean": "특수 능력"
+    },
+    {
+      "block_index": 555,
+      "korean": "강화 파츠"
+    },
+    {
+      "block_index": 556,
+      "korean": "무기 선택"
+    },
+    {
+      "block_index": 557,
+      "korean": "무기명"
+    },
+    {
+      "block_index": 558,
+      "korean": "속성"
+    },
+    {
+      "block_index": 559,
+      "korean": "공격력"
+    },
+    {
+      "block_index": 560,
+      "korean": "사정거리"
+    },
+    {
+      "block_index": 561,
+      "korean": "명중률"
+    },
+    {
+      "block_index": 562,
+      "korean": "잔탄"
+    },
+    {
+      "block_index": 563,
+      "korean": "에너지 소비"
+    },
+    {
+      "block_index": 564,
+      "korean": "필요 기력"
+    },
+    {
+      "block_index": 565,
+      "korean": "장착 위치"
+    },
+    {
+      "block_index": 566,
+      "korean": "지형 적응"
+    },
+    {
+      "block_index": 567,
+      "korean": "사용 가능 크기"
+    },
+    {
+      "block_index": 568,
+      "korean": "필요 스킬"
+    },
+    {
+      "block_index": 569,
+      "korean": "치명타 보정"
+    },
+    {
+      "block_index": 570,
+      "korean": "유닛"
+    },
+    {
+      "block_index": 571,
+      "korean": "무기"
+    },
+    {
+      "block_index": 572,
+      "korean": "파일럿"
+    },
+    {
+      "block_index": 573,
+      "korean": "기타"
+    },
+    {
+      "block_index": 574,
+      "korean": "파일럿"
+    },
+    {
+      "block_index": 575,
+      "korean": "유닛"
+    },
+    {
+      "block_index": 576,
+      "korean": "유닛 능력"
+    },
+    {
+      "block_index": 577,
+      "korean": "유닛 개조"
+    },
+    {
+      "block_index": 578,
+      "korean": "강화 파츠"
+    },
+    {
+      "block_index": 579,
+      "korean": "강화 파츠 판매"
+    },
+    {
+      "block_index": 580,
+      "korean": "유닛 환장"
+    },
+    {
+      "block_index": 581,
+      "korean": "무기 성능"
+    },
+    {
+      "block_index": 582,
+      "korean": "무기 개조"
+    },
+    {
+      "block_index": 583,
+      "korean": "파일럿 능력"
+    },
+    {
+      "block_index": 584,
+      "korean": "스킬 파츠"
+    },
+    {
+      "block_index": 585,
+      "korean": "스킬 파츠 판매"
+    },
+    {
+      "block_index": 586,
+      "korean": "파일럿 배치"
+    },
+    {
+      "block_index": 587,
+      "korean": "무기 성능"
+    },
+    {
+      "block_index": 588,
+      "korean": "출격 준비"
+    },
+    {
+      "block_index": 589,
+      "korean": "자금"
+    },
+    {
+      "block_index": 590,
+      "korean": "총 턴 수"
+    },
+    {
+      "block_index": 591,
+      "korean": "시스템 설정"
+    },
+    {
+      "block_index": 592,
+      "korean": "맵 확인"
+    },
+    {
+      "block_index": 593,
+      "korean": "출격 선택"
+    },
+    {
+      "block_index": 594,
+      "korean": "지형 효과"
+    },
+    {
+      "block_index": 595,
+      "korean": "방어 보정"
+    },
+    {
+      "block_index": 596,
+      "korean": "체력 회복률"
+    },
+    {
+      "block_index": 597,
+      "korean": "명중 보정"
+    },
+    {
+      "block_index": 598,
+      "korean": "에너지 회복률"
+    },
+    {
+      "block_index": 599,
+      "korean": "작전 목적"
+    },
+    {
+      "block_index": 600,
+      "korean": "승리 조건"
+    },
+    {
+      "block_index": 601,
+      "korean": "패배 조건"
+    },
+    {
+      "block_index": 602,
+      "korean": "이동"
+    },
+    {
+      "block_index": 603,
+      "korean": "대기"
+    },
+    {
+      "block_index": 604,
+      "korean": "정신기"
+    },
+    {
+      "block_index": 605,
+      "korean": "능력"
+    },
+    {
+      "block_index": 606,
+      "korean": "공격"
+    },
+    {
+      "block_index": 607,
+      "korean": "착륙"
+    },
+    {
+      "block_index": 608,
+      "korean": "공중"
+    },
+    {
+      "block_index": 609,
+      "korean": "지중"
+    },
+    {
+      "block_index": 610,
+      "korean": "수중"
+    },
+    {
+      "block_index": 611,
+      "korean": "수상"
+    },
+    {
+      "block_index": 612,
+      "korean": "파츠 사용"
+    },
+    {
+      "block_index": 613,
+      "korean": "변형"
+    },
+    {
+      "block_index": 614,
+      "korean": "합체"
+    },
+    {
+      "block_index": 615,
+      "korean": "분리"
+    },
+    {
+      "block_index": 616,
+      "korean": "탑승"
+    },
+    {
+      "block_index": 617,
+      "korean": "발진"
+    },
+    {
+      "block_index": 618,
+      "korean": "설득"
+    },
+    {
+      "block_index": 619,
+      "korean": "수리"
+    },
+    {
+      "block_index": 620,
+      "korean": "보급"
+    },
+    {
+      "block_index": 621,
+      "korean": "포획"
+    },
+    {
+      "block_index": 622,
+      "korean": "턴 종료"
+    },
+    {
+      "block_index": 623,
+      "korean": "검색"
+    },
+    {
+      "block_index": 624,
+      "korean": "부대 목록"
+    },
+    {
+      "block_index": 625,
+      "korean": "작전 목적"
+    },
+    {
+      "block_index": 626,
+      "korean": "시스템"
+    },
+    {
+      "block_index": 627,
+      "korean": "저장"
+    },
+    {
+      "block_index": 628,
+      "korean": "턴"
+    },
+    {
+      "block_index": 629,
+      "korean": "예"
+    },
+    {
+      "block_index": 630,
+      "korean": "아니요"
+    },
+    {
+      "block_index": 631,
+      "korean": "획득 강화 파츠"
+    },
+    {
+      "block_index": 632,
+      "korean": "수량"
+    },
+    {
+      "block_index": 633,
+      "korean": "획득 스킬 파츠"
+    },
+    {
+      "block_index": 634,
+      "korean": "유닛 개조"
+    },
+    {
+      "block_index": 635,
+      "korean": "장갑"
+    },
+    {
+      "block_index": 636,
+      "korean": "운동성"
+    },
+    {
+      "block_index": 637,
+      "korean": "장갑"
+    },
+    {
+      "block_index": 638,
+      "korean": "운동성"
+    },
+    {
+      "block_index": 639,
+      "korean": "비용"
+    },
+    {
+      "block_index": 640,
+      "korean": "잔액"
+    },
+    {
+      "block_index": 641,
+      "korean": "풀 개조 보너스"
+    },
+    {
+      "block_index": 642,
+      "korean": "조종계"
+    },
+    {
+      "block_index": 643,
+      "korean": "무장"
+    },
+    {
+      "block_index": 644,
+      "korean": "엔진"
+    },
+    {
+      "block_index": 645,
+      "korean": "체력"
+    },
+    {
+      "block_index": 646,
+      "korean": "에너지"
+    },
+    {
+      "block_index": 647,
+      "korean": "무기 개조"
+    },
+    {
+      "block_index": 648,
+      "korean": "무기명"
+    },
+    {
+      "block_index": 649,
+      "korean": "공격력"
+    },
+    {
+      "block_index": 650,
+      "korean": "공중"
+    },
+    {
+      "block_index": 651,
+      "korean": "지상"
+    },
+    {
+      "block_index": 652,
+      "korean": "수중"
+    },
+    {
+      "block_index": 653,
+      "korean": "우주"
+    },
+    {
+      "block_index": 654,
+      "korean": "풀 개조 보너스"
+    },
+    {
+      "block_index": 655,
+      "korean": "이동력 상승"
+    },
+    {
+      "block_index": 656,
+      "korean": "지형 적응"
+    },
+    {
+      "block_index": 657,
+      "korean": "공중"
+    },
+    {
+      "block_index": 658,
+      "korean": "지상"
+    },
+    {
+      "block_index": 659,
+      "korean": "수중"
+    },
+    {
+      "block_index": 660,
+      "korean": "우주"
+    },
+    {
+      "block_index": 661,
+      "korean": "잔탄"
+    },
+    {
+      "block_index": 662,
+      "korean": "치명타 보정"
+    },
+    {
+      "block_index": 663,
+      "korean": "명중 보정"
+    },
+    {
+      "block_index": 664,
+      "korean": "에너지 소비"
+    },
+    {
+      "block_index": 666,
+      "korean": "발진 목록"
+    },
+    {
+      "block_index": 667,
+      "korean": "기체명"
+    },
+    {
+      "block_index": 668,
+      "korean": "파일럿"
+    },
+    {
+      "block_index": 669,
+      "korean": "레벨"
+    },
+    {
+      "block_index": 670,
+      "korean": "기력"
+    },
+    {
+      "block_index": 671,
+      "korean": "정신"
+    },
+    {
+      "block_index": 672,
+      "korean": "출격 목록"
+    },
+    {
+      "block_index": 673,
+      "korean": "출격 수"
+    },
+    {
+      "block_index": 674,
+      "korean": "기체"
+    },
+    {
+      "block_index": 675,
+      "korean": "대상: 본체"
+    },
+    {
+      "block_index": 676,
+      "korean": "대상: 본체"
+    },
+    {
+      "block_index": 677,
+      "korean": "대상: 머리"
+    },
+    {
+      "block_index": 678,
+      "korean": "대상: 팔"
+    },
+    {
+      "block_index": 679,
+      "korean": "대상: 다리"
+    },
+    {
+      "block_index": 680,
+      "korean": "대상: 조종계"
+    },
+    {
+      "block_index": 681,
+      "korean": "대상: 무장"
+    },
+    {
+      "block_index": 682,
+      "korean": "대상: 엔진"
+    },
+    {
+      "block_index": 683,
+      "korean": "명중률"
+    },
+    {
+      "block_index": 684,
+      "korean": "획득 자금"
+    },
+    {
+      "block_index": 685,
+      "korean": "파일럿"
+    },
+    {
+      "block_index": 686,
+      "korean": "경험치"
+    },
+    {
+      "block_index": 687,
+      "korean": "레벨"
+    },
+    {
+      "block_index": 688,
+      "korean": "레벨 상승"
+    },
+    {
+      "block_index": 689,
+      "korean": "정신"
+    },
+    {
+      "block_index": 690,
+      "korean": "강화 파츠 장착"
+    },
+    {
+      "block_index": 691,
+      "korean": "강화 파츠 판매"
+    },
+    {
+      "block_index": 692,
+      "korean": "유닛 환장"
+    },
+    {
+      "block_index": 693,
+      "korean": "스킬 파츠"
+    },
+    {
+      "block_index": 694,
+      "korean": "스킬 파츠 판매"
+    },
+    {
+      "block_index": 695,
+      "korean": "파일럿 배치"
+    },
+    {
+      "block_index": 696,
+      "korean": "시스템 설정"
+    },
+    {
+      "block_index": 697,
+      "korean": "데이터 저장"
+    },
+    {
+      "block_index": 698,
+      "korean": "데이터 불러오기"
+    },
+    {
+      "block_index": 699,
+      "korean": "레벨"
+    },
+    {
+      "block_index": 700,
+      "korean": "에너지"
+    },
+    {
+      "block_index": 701,
+      "korean": "정신 소비"
+    },
+    {
+      "block_index": 702,
+      "korean": "정신기 효과"
+    },
+    {
+      "block_index": 703,
+      "korean": "수리 대상 기체"
+    },
+    {
+      "block_index": 704,
+      "korean": "수리비"
+    },
+    {
+      "block_index": 705,
+      "korean": "자금"
+    },
+    {
+      "block_index": 706,
+      "korean": "수리 총액"
+    },
+    {
+      "block_index": 707,
+      "korean": "운용 중인 기체"
+    },
+    {
+      "block_index": 708,
+      "korean": "환급 자금"
+    },
+    {
+      "block_index": 711,
+      "korean": "<< 파일럿 능력"
+    },
+    {
+      "block_index": 712,
+      "korean": "<< 무기 성능"
+    },
+    {
+      "block_index": 713,
+      "korean": "<< 유닛 능력"
+    },
+    {
+      "block_index": 714,
+      "korean": "파일럿 능력 >>"
+    },
+    {
+      "block_index": 715,
+      "korean": "변경 전 파츠"
+    },
+    {
+      "block_index": 716,
+      "korean": "장착 기체"
+    },
+    {
+      "block_index": 717,
+      "korean": "선택 파츠"
+    },
+    {
+      "block_index": 718,
+      "korean": "총 보유 수"
+    },
+    {
+      "block_index": 719,
+      "korean": "장착 기체 능력"
+    },
+    {
+      "block_index": 720,
+      "korean": "이동력"
+    },
+    {
+      "block_index": 721,
+      "korean": "탑승 파일럿"
+    },
+    {
+      "block_index": 722,
+      "korean": "탑승 파일럿 능력"
+    },
+    {
+      "block_index": 723,
+      "korean": "현재 장착"
+    },
+    {
+      "block_index": 724,
+      "korean": "파츠 목록"
+    },
+    {
+      "block_index": 725,
+      "korean": "잔여"
+    },
+    {
+      "block_index": 726,
+      "korean": "합계"
+    },
+    {
+      "block_index": 727,
+      "korean": "정신기 검색"
+    },
+    {
+      "block_index": 728,
+      "korean": "파일럿 특수 기능 검색"
+    },
+    {
+      "block_index": 729,
+      "korean": "기체 특수 능력 검색"
+    },
+    {
+      "block_index": 730,
+      "korean": "강화 파츠 검색"
+    },
+    {
+      "block_index": 731,
+      "korean": "가나다순 검색"
+    },
+    {
+      "block_index": 732,
+      "korean": "스킬 파츠 검색"
+    },
+    {
+      "block_index": 733,
+      "korean": "판매가"
+    },
+    {
+      "block_index": 734,
+      "korean": "판매 수량"
+    },
+    {
+      "block_index": 735,
+      "korean": "소계"
+    },
+    {
+      "block_index": 736,
+      "korean": "합계"
+    },
+    {
+      "block_index": 737,
+      "korean": "기체용"
+    },
+    {
+      "block_index": 738,
+      "korean": "무기용"
+    },
+    {
+      "block_index": 739,
+      "korean": "소비용"
+    },
+    {
+      "block_index": 740,
+      "korean": "능력용"
+    },
+    {
+      "block_index": 741,
+      "korean": "특기용"
+    },
+    {
+      "block_index": 742,
+      "korean": "주인공"
+    },
+    {
+      "block_index": 743,
+      "korean": "총 턴 수"
+    },
+    {
+      "block_index": 744,
+      "korean": "시나리오"
+    },
+    {
+      "block_index": 745,
+      "korean": "자금"
+    },
+    {
+      "block_index": 746,
+      "korean": "정신"
+    },
+    {
+      "block_index": 747,
+      "korean": "정신 소비"
+    },
+    {
+      "block_index": 748,
+      "korean": "에너지"
+    },
+    {
+      "block_index": 749,
+      "korean": "일반 공격"
+    },
+    {
+      "block_index": 750,
+      "korean": "부위 공격"
+    },
+    {
+      "block_index": 751,
+      "korean": "기력"
+    },
+    {
+      "block_index": 752,
+      "korean": "명중률"
+    },
+    {
+      "block_index": 753,
+      "korean": "대상: 본체"
+    },
+    {
+      "block_index": 754,
+      "korean": "대상: 머리"
+    },
+    {
+      "block_index": 755,
+      "korean": "대상: 팔"
+    },
+    {
+      "block_index": 756,
+      "korean": "대상: 다리"
+    },
+    {
+      "block_index": 757,
+      "korean": "대상: 조종계"
+    },
+    {
+      "block_index": 758,
+      "korean": "대상: 엔진"
+    },
+    {
+      "block_index": 759,
+      "korean": "전투 시작"
+    },
+    {
+      "block_index": 760,
+      "korean": "행동 설정"
+    },
+    {
+      "block_index": 761,
+      "korean": "원호 설정"
+    },
+    {
+      "block_index": 762,
+      "korean": "전투 연출"
+    },
+    {
+      "block_index": 775,
+      "korean": "반격"
+    },
+    {
+      "block_index": 776,
+      "korean": "방어"
+    },
+    {
+      "block_index": 777,
+      "korean": "회피"
+    },
+    {
+      "block_index": 778,
+      "korean": "무기 선택"
+    },
+    {
+      "block_index": 779,
+      "korean": "부위 설정"
+    },
+    {
+      "block_index": 780,
+      "korean": "없음"
+    },
+    {
+      "block_index": 781,
+      "korean": "원호 공격"
+    },
+    {
+      "block_index": 782,
+      "korean": "원호 방어"
+    },
+    {
+      "block_index": 783,
+      "korean": "연속 공격"
+    },
+    {
+      "block_index": 784,
+      "korean": "켬"
+    },
+    {
+      "block_index": 785,
+      "korean": "끔"
+    },
+    {
+      "block_index": 786,
+      "korean": "원호"
+    },
+    {
+      "block_index": 787,
+      "korean": "대상: 무장"
+    },
+    {
+      "block_index": 788,
+      "korean": "일반"
+    },
+    {
+      "block_index": 789,
+      "korean": "머리"
+    },
+    {
+      "block_index": 790,
+      "korean": "팔"
+    },
+    {
+      "block_index": 791,
+      "korean": "다리"
+    },
+    {
+      "block_index": 792,
+      "korean": "조종계"
+    },
+    {
+      "block_index": 793,
+      "korean": "무장"
+    },
+    {
+      "block_index": 794,
+      "korean": "엔진"
+    },
+    {
+      "block_index": 795,
+      "korean": "원호 설정"
+    },
+    {
+      "block_index": 796,
+      "korean": "원호 공격 없음"
+    },
+    {
+      "block_index": 797,
+      "korean": "연속 공격 없음"
+    },
+    {
+      "block_index": 798,
+      "korean": "원호 방어 없음"
+    },
+    {
+      "block_index": 799,
+      "korean": "선택 파일럿"
+    },
+    {
+      "block_index": 800,
+      "korean": "보조 파일럿"
+    },
+    {
+      "block_index": 801,
+      "korean": "메인 파일럿"
+    },
+    {
+      "block_index": 802,
+      "korean": "현재 기체"
+    },
+    {
+      "block_index": 805,
+      "korean": "무기 성능 >>"
+    },
+    {
+      "block_index": 806,
+      "korean": "유닛 능력 >>"
+    },
+    {
+      "block_index": 807,
+      "korean": "공격"
+    },
+    {
+      "block_index": 808,
+      "korean": "반격"
+    },
+    {
+      "block_index": 809,
+      "korean": "회피"
+    },
+    {
+      "block_index": 810,
+      "korean": "방어"
+    },
+    {
+      "block_index": 811,
+      "korean": "불가"
+    },
+    {
+      "block_index": 812,
+      "korean": "유닛 환장"
+    },
+    {
+      "block_index": 813,
+      "korean": "유닛 선택"
+    },
+    {
+      "block_index": 814,
+      "korean": "현재 유닛"
+    },
+    {
+      "block_index": 815,
+      "korean": "환장 후 유닛"
+    },
+    {
+      "block_index": 816,
+      "korean": "환장 전 유닛"
+    },
+    {
+      "block_index": 817,
+      "korean": "상태"
+    },
+    {
+      "block_index": 819,
+      "korean": "레벨"
+    },
+    {
+      "block_index": 820,
+      "korean": "원호"
+    },
+    {
+      "block_index": 821,
+      "korean": "기력"
+    },
+    {
+      "block_index": 822,
+      "korean": "정신"
+    },
+    {
+      "block_index": 823,
+      "korean": "정신기 효과"
+    },
+    {
+      "block_index": 824,
+      "korean": "지형 효과"
+    },
+    {
+      "block_index": 825,
+      "korean": "철수"
+    },
+    {
+      "block_index": 826,
+      "korean": "운동성"
+    },
+    {
+      "block_index": 827,
+      "korean": "장갑"
+    },
+    {
+      "block_index": 828,
+      "korean": "이동력"
+    },
+    {
+      "block_index": 829,
+      "korean": "공중 지상 수중 우주"
+    },
+    {
+      "block_index": 830,
+      "korean": "기력"
+    },
+    {
+      "block_index": 831,
+      "korean": "잔탄 재장전"
+    },
+    {
+      "block_index": 832,
+      "korean": "정신"
+    },
+    {
+      "block_index": 833,
+      "korean": "주인공 선택"
+    },
+    {
+      "block_index": 834,
+      "korean": "남자 주인공"
+    },
+    {
+      "block_index": 835,
+      "korean": "여자 주인공"
+    },
+    {
+      "block_index": 836,
+      "korean": "유닛 선택"
+    },
+    {
+      "block_index": 837,
+      "korean": "주인공 설정"
+    },
+    {
+      "block_index": 838,
+      "korean": "파일럿"
+    },
+    {
+      "block_index": 839,
+      "korean": "유닛"
+    },
+    {
+      "block_index": 840,
+      "korean": "확인"
+    },
+    {
+      "block_index": 841,
+      "korean": "이름 변경"
+    },
+    {
+      "block_index": 842,
+      "korean": "이름 변경"
+    },
+    {
+      "block_index": 843,
+      "korean": "이름"
+    },
+    {
+      "block_index": 844,
+      "korean": "애칭"
+    },
+    {
+      "block_index": 845,
+      "korean": "캐릭터 사전"
+    },
+    {
+      "block_index": 846,
+      "korean": "애칭"
+    },
+    {
+      "block_index": 847,
+      "korean": "성우"
+    },
+    {
+      "block_index": 848,
+      "korean": "등장 작품"
+    },
+    {
+      "block_index": 849,
+      "korean": "로봇 대도감"
+    },
+    {
+      "block_index": 850,
+      "korean": "전장"
+    },
+    {
+      "block_index": 851,
+      "korean": "중량"
+    },
+    {
+      "block_index": 852,
+      "korean": "크기"
+    },
+    {
+      "block_index": 853,
+      "korean": "소"
+    },
+    {
+      "block_index": 854,
+      "korean": "중"
+    },
+    {
+      "block_index": 855,
+      "korean": "대"
+    },
+    {
+      "block_index": 856,
+      "korean": "옵션"
+    },
+    {
+      "block_index": 857,
+      "korean": "사운드 선택"
+    },
+    {
+      "block_index": 858,
+      "korean": "캐릭터 사전"
+    },
+    {
+      "block_index": 859,
+      "korean": "로봇 대도감"
+    },
+    {
+      "block_index": 860,
+      "korean": "사운드 선택"
+    },
+    {
+      "block_index": 861,
+      "korean": "곡명"
+    },
+    {
+      "block_index": 862,
+      "korean": "재생"
+    },
+    {
+      "block_index": 863,
+      "korean": "정지"
+    },
+    {
+      "block_index": 864,
+      "korean": "전투 연출"
+    },
+    {
+      "block_index": 865,
+      "korean": "전투 음악"
+    },
+    {
+      "block_index": 866,
+      "korean": "격자 표시"
+    },
+    {
+      "block_index": 867,
+      "korean": "진동"
+    },
+    {
+      "block_index": 868,
+      "korean": "매 턴 저장"
+    },
+    {
+      "block_index": 869,
+      "korean": "사운드 설정"
+    },
+    {
+      "block_index": 870,
+      "korean": "스테레오"
+    },
+    {
+      "block_index": 871,
+      "korean": "켬"
+    },
+    {
+      "block_index": 872,
+      "korean": "끔"
+    },
+    {
+      "block_index": 873,
+      "korean": "고정"
+    },
+    {
+      "block_index": 874,
+      "korean": "전환"
+    },
+    {
+      "block_index": 875,
+      "korean": "모노"
+    },
+    {
+      "block_index": 876,
+      "korean": "스테이지 선택"
+    },
+    {
+      "block_index": 877,
+      "korean": "시나리오명"
+    },
+    {
+      "block_index": 878,
+      "korean": "클리어 상황"
+    },
+    {
+      "block_index": 879,
+      "korean": "수집률"
+    },
+    {
+      "block_index": 880,
+      "korean": "운용 기체 처분"
+    },
+    {
+      "block_index": 881,
+      "korean": "환급 자금"
+    },
+    {
+      "block_index": 882,
+      "korean": "강화 파츠"
+    },
+    {
+      "block_index": 883,
+      "korean": "포획 기체 처리"
+    },
+    {
+      "block_index": 884,
+      "korean": "처리"
+    },
+    {
+      "block_index": 885,
+      "korean": "남은 기체"
+    },
+    {
+      "block_index": 886,
+      "korean": "철수"
+    },
+    {
+      "block_index": 887,
+      "korean": "에피소드"
+    },
+    {
+      "block_index": 888,
+      "korean": "신규"
+    },
+    {
+      "block_index": 889,
+      "korean": "회차"
+    },
+    {
+      "block_index": 890,
+      "korean": "맵 확인 중"
+    },
+    {
+      "block_index": 891,
+      "korean": "읽는 법"
+    },
+    {
+      "block_index": 892,
+      "korean": "명중·회피"
+    },
+    {
+      "block_index": 893,
+      "korean": "공격력"
+    },
+    {
+      "block_index": 894,
+      "korean": "이동력"
+    },
+    {
+      "block_index": 895,
+      "korean": "정상"
+    },
+    {
+      "block_index": 896,
+      "korean": "체력"
+    },
+    {
+      "block_index": 897,
+      "korean": "대건물"
+    },
+    {
+      "block_index": 898,
+      "korean": "획득 자금"
+    },
+    {
+      "block_index": 899,
+      "korean": "수리비"
+    },
+    {
+      "block_index": 900,
+      "korean": "스킬 파츠 검색"
+    },
+    {
+      "block_index": 901,
+      "korean": "강화 파츠 검색"
+    },
+    {
+      "block_index": 902,
+      "korean": "가나다순 검색"
+    },
+    {
+      "block_index": 903,
+      "korean": "정신기 검색"
+    },
+    {
+      "block_index": 904,
+      "korean": "파일럿 특수 기능 검색"
+    },
+    {
+      "block_index": 905,
+      "korean": "기체 특수 능력 검색"
+    },
+    {
+      "block_index": 906,
+      "korean": "무기 선택"
+    },
+    {
+      "block_index": 907,
+      "korean": "전체 해체"
+    },
+    {
+      "block_index": 908,
+      "korean": "전체 파츠화"
+    },
+    {
+      "block_index": 909,
+      "korean": "운용 목록"
+    },
+    {
+      "block_index": 910,
+      "korean": "종료"
+    },
+    {
+      "block_index": 911,
+      "korean": "체력"
+    },
+    {
+      "block_index": 912,
+      "korean": "에너지"
+    },
+    {
+      "block_index": 913,
+      "korean": "장갑"
+    },
+    {
+      "block_index": 914,
+      "korean": "무기"
+    },
+    {
+      "block_index": 915,
+      "korean": "개조"
+    },
+    {
+      "block_index": 916,
+      "korean": "강화 파츠 판매"
+    },
+    {
+      "block_index": 917,
+      "korean": "스킬 파츠 판매"
+    },
+    {
+      "block_index": 918,
+      "korean": "운용 기체 처분"
+    },
+    {
+      "block_index": 919,
+      "korean": "도감"
+    },
+    {
+      "block_index": 920,
+      "korean": "사전"
+    },
+    {
+      "block_index": 921,
+      "korean": "검색"
+    },
+    {
+      "block_index": 922,
+      "korean": "스킬/에이스\n보너스"
+    }
+  ]
+}
