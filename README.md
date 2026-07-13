@@ -2,13 +2,18 @@
 
 닌텐도 게임큐브 일본판 **슈퍼로봇대전 GC**용 비공식 한국어 패치입니다. 대상 게임 ID는 `GRWJD9`이며, 다른 지역판이나 이미 수정된 이미지에는 적용할 수 없습니다.
 
-최신 배포본은 [v1.0.4 릴리스](https://github.com/snake7594/srw-gc-korean-patch/releases/tag/v1.0.4)에서 받을 수 있습니다.
+최신 배포본은 [v1.0.5 릴리스](https://github.com/snake7594/srw-gc-korean-patch/releases/tag/v1.0.5)에서 받을 수 있습니다.
 
 **v1.0.1은 전투 화면의 동적 타일 번호를 손상할 수 있으므로 사용하지 마세요.**
 **v1.0.3은 인물·로봇도감 설명문에서 글자 깨짐과 잘못된 메모리 읽기가 발생할 수 있어 철회했으므로 사용하지 마세요.**
+**v1.0.4는 정신기 설명 23건이 다른 정신기에 연결되므로 v1.0.5로 교체하세요.**
 
-## v1.0.4 주요 내용
+## v1.0.5 주요 내용
 
+- 일본판 안정 ID 기준으로 정신기 전체 명칭 30건·축약 30건·설명 29건을 다시 결합
+- `자기→자`, `력→노`, `난→란` 축약 표기와 DOL의 `초근성·교란·기력·사랑` 중복 라벨 교정
+- 정신기 설명을 일본판 표시 규격인 최대 2줄·한 줄 23자(실측 최대 41바이트)로 정리
+- 기존 CSV 순번 매칭 결과를 덮어쓰는 37건의 고정 ID 교정과 전체 배열 회귀 검사 추가
 - 대사와 메뉴의 한국어화
 - 공략집 PDF 2권과 일본어 원문을 교차 검토해 실제 텍스트 2,778건 교정
 - 초반·중반 주요 장면을 포함한 대사 95건을 문맥과 화자 말투에 맞게 직접 교정
@@ -38,9 +43,9 @@
 | 원본 이미지 크기 | `1,459,978,240` 바이트 |
 | 원본 SHA-256 | `AD4CB99FFB3C0383802A2AB87963F98BA417DFC5184ED3FE3DFE077DA02DB229` |
 | 결과 이미지 크기 | `1,459,978,240` 바이트 |
-| 결과 SHA-256 | `118FD773C7614292C244B8F0CEE60B0AE7C25A14D8EC33297F95448096A384B0` |
-| xdelta 크기 | `110,414,337` 바이트 |
-| xdelta SHA-256 | `1DB3828D92BAFCCD976702155DF22FFF3974E4245485CF2595631330F49D3897` |
+| 결과 SHA-256 | `7E9DA87B4E2AE2E49C2840349DDF55ACD2FEF0FED0E72937332D0C08C49B40E3` |
+| xdelta 크기 | `110,414,124` 바이트 |
+| xdelta SHA-256 | `7298B5439168CAFD1A275D8CC743DFCC03D5C6E8321CB079429C05E873A90B9F` |
 
 소유한 정품 디스크에서 직접 만든, 수정되지 않은 원본 ISO만 사용하세요. 적용 스크립트가 원본 SHA-256을 검사하므로 파일명이 달라도 정확한 원본이면 사용할 수 있습니다.
 
@@ -48,7 +53,7 @@
 
 1. [xdelta3 공식 프로젝트](https://github.com/jmacd/xdelta-gpl/releases)에서 Windows용 `xdelta3.exe`를 준비합니다.
 2. 다음 파일을 같은 폴더에 둡니다.
-   - `SRW_GC_Korean_v1.0.4.xdelta`
+   - `SRW_GC_Korean_v1.0.5.xdelta`
    - `APPLY_PATCH.bat`
    - `apply_patch.ps1`
    - `xdelta3.exe` — 또는 `xdelta3`/`xdelta`를 `PATH`에 등록
@@ -64,7 +69,7 @@ APPLY_PATCH.bat "D:\Games\Super Robot Taisen GC.iso"
 APPLY_PATCH.bat "D:\Games\Super Robot Taisen GC.iso" "D:\Games\Super Robot Taisen GC Korean.iso"
 ```
 
-출력 경로를 생략하면 원본 ISO와 같은 폴더에 `Super Robot Taisen GC_Korean_v1.0.4.iso`가 만들어집니다. 스크립트는 패치 전 원본과 패치 후 결과의 SHA-256을 모두 검사합니다.
+출력 경로를 생략하면 원본 ISO와 같은 폴더에 `Super Robot Taisen GC_Korean_v1.0.5.iso`가 만들어집니다. 스크립트는 패치 전 원본과 패치 후 결과의 SHA-256을 모두 검사합니다.
 
 PowerShell에서 직접 실행할 수도 있습니다.
 
@@ -78,10 +83,11 @@ PowerShell에서 직접 실행할 수도 있습니다.
 - `tools/repack_preserve_indices.py`: 원본 타일 번호를 보존하는 최종 UI 재패커
 - `tools/audit_shared_atlas_refs.py`: 동적·공유 타일 손상 여부 감사 도구
 - `tools/apply_translation_quality_overrides.py`: PDF·일본어 원문 교정값을 안정 ID 기준으로 적용하고 구조·문자 잔존을 검사하는 도구
+- `tools/apply_spirit_command_corrections.py`: 정신기 이름·축약·설명을 일본판 안정 ID로 교정하고 30·30·29건의 대응을 검사하는 도구
 - `tools/patch_episode_title_graphics.py`: 허용된 시나리오 제목 BMP만 고정 레이아웃으로 다시 그리는 도구
 - `docs/기술_문서.md`: 패치 구조와 검증 절차
 - `docs/UI_이미지_패치.md`: 메뉴·타이틀·로딩 이미지의 재패킹 방식과 재현값
-- `data/`: UI 이미지 매핑과 검토된 PDF 번역 품질 교정 JSON
+- `data/`: UI 이미지 매핑, PDF 번역 품질 교정 및 정신기 안정 ID 교정 JSON
 - `APPLY_PATCH.bat`, `apply_patch.ps1`: Windows용 패치 적용 도구
 - `release_manifest.json`, `SHA256SUMS.txt`: 릴리스 식별값과 파일 검증값
 
