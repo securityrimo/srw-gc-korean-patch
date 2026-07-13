@@ -1,0 +1,2382 @@
+{
+  "schema": "srw-gc-pdf-translation-quality-v1",
+  "description": "VGL 공략집 PDF의 시나리오 문맥과 일본어 원문을 함께 대조한 번역 품질 교정",
+  "reference_pdfs": [
+    {
+      "filename": "NGC 슈로봇대전 GC 1부.pdf",
+      "sha256": "45BF35FE15B3A38170D4DD3436CFF7E4335B7D61D79F827606730D4F8A293240",
+      "pages": 49
+    },
+    {
+      "filename": "NGC 슈로봇대전 GC 2부.pdf",
+      "sha256": "C55FACC33D17DE34DFE18D29A3D6CA9D41CDFFC797BD5F37EE4EF486E265FE92",
+      "pages": 129
+    }
+  ],
+  "policy": [
+    "PDF 표기는 일본어 원문과 기존 정상 번역을 함께 대조한다.",
+    "PDF 내부 표기가 충돌하면 일본어 원문과 현대 통용 표기를 우선한다.",
+    "남녀 주인공 이름은 사용자 지정인 아카츠키 아키미/아카츠키 아케미를 유지한다."
+  ],
+  "expected_inputs": {
+    "master": "F644107A1D45286C5E411AE03E2C379925460D11A69898CDE8E38A4C3E94F544",
+    "add01_replacements.json": "27777E3687DEE24A7DAE644420FD596B3CCE945449446356E675B03A1DFE6D7D",
+    "add02_replacements.json": "CCE54D255A974CDC5288EDEF76CDA0D35E4B505B6D8F6311D893E0CB6A0E00C1",
+    "bpilot_replacements.json": "833573C77F02F6B139D07DB8E2E8DE79C8A0125396BDFF3B5573BA893BCF1678",
+    "dol_all_replacements.json": "D0C4B07966D0E5500FF06DF979DE78B019D060172ABEBB6F8B94A5B664A9BD72",
+    "dol_name_input_replacements.json": "684B01D3E062301C651628FEAEE02B121D5E3EAFCE10F8F97BA70376AFE5998D"
+  },
+  "context_replacements": [
+    {
+      "before": "플라우 · 활",
+      "after": "프라우 보우",
+      "mode": "literal",
+      "japanese_any": [
+        "フラウ"
+      ],
+      "speaker_any": [
+        "フラウ"
+      ],
+      "expected_occurrences": 2,
+      "expected_records": 2,
+      "pdf": "1부",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "before": "플라우",
+      "after": "프라우",
+      "mode": "literal",
+      "japanese_any": [
+        "フラウ"
+      ],
+      "speaker_any": [
+        "フラウ"
+      ],
+      "expected_occurrences": 216,
+      "expected_records": 214,
+      "pdf": "1부",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "before": "세일라",
+      "after": "세이라",
+      "mode": "literal",
+      "japanese_any": [
+        "セイラ"
+      ],
+      "speaker_any": [
+        "セイラ"
+      ],
+      "expected_occurrences": 144,
+      "expected_records": 143,
+      "pdf": "2부",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "before": "핫토",
+      "after": "하야토",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "隼人"
+      ],
+      "speaker_any": [
+        "隼人"
+      ],
+      "expected_occurrences": 246,
+      "expected_records": 245,
+      "pdf": "1부",
+      "pages": [
+        23,
+        25
+      ]
+    },
+    {
+      "before": "코우",
+      "after": "코우지",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "甲児"
+      ],
+      "speaker_any": [
+        "甲児"
+      ],
+      "expected_occurrences": 238,
+      "expected_records": 226,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "테츠",
+      "after": "테츠야",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "鉄也"
+      ],
+      "speaker_any": [
+        "鉄也"
+      ],
+      "expected_occurrences": 129,
+      "expected_records": 127,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "아스",
+      "after": "아스카",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "飛鳥"
+      ],
+      "speaker_any": [
+        "飛鳥"
+      ],
+      "expected_occurrences": 110,
+      "expected_records": 108,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "마사",
+      "after": "마사토",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "雅人"
+      ],
+      "speaker_any": [
+        "雅人"
+      ],
+      "expected_occurrences": 61,
+      "expected_records": 61,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "카키코",
+      "after": "카키코우지",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "柿小路"
+      ],
+      "speaker_any": [
+        "柿小路"
+      ],
+      "expected_occurrences": 58,
+      "expected_records": 58,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "코지",
+      "after": "코우지",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "吼児",
+        "甲児"
+      ],
+      "speaker_any": [
+        "吼児",
+        "甲児"
+      ],
+      "expected_occurrences": 142,
+      "expected_records": 140,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "히토",
+      "after": "진",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "仁"
+      ],
+      "speaker_any": [
+        "仁"
+      ],
+      "exclude_ids": [
+        "dol:off002C4E5C",
+        "dol:off002C5604"
+      ],
+      "expected_occurrences": 83,
+      "expected_records": 81,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "아수라남작",
+      "after": "아수라 남작",
+      "mode": "literal",
+      "japanese_any": [
+        "あしゅら男爵"
+      ],
+      "speaker_any": [
+        "あしゅら男爵"
+      ],
+      "expected_occurrences": 250,
+      "expected_records": 248,
+      "pdf": "1부",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "before": "최상 중공업",
+      "after": "모가미 중공",
+      "mode": "literal",
+      "japanese_any": [
+        "最上重工"
+      ],
+      "speaker_any": [
+        "最上重工"
+      ],
+      "expected_occurrences": 1,
+      "expected_records": 1,
+      "pdf": "1부",
+      "pages": [
+        30,
+        37
+      ]
+    },
+    {
+      "before": "최상중공",
+      "after": "모가미 중공",
+      "mode": "literal",
+      "japanese_any": [
+        "最上重工"
+      ],
+      "speaker_any": [
+        "最上重工"
+      ],
+      "expected_occurrences": 44,
+      "expected_records": 40,
+      "pdf": "1부",
+      "pages": [
+        30,
+        37
+      ]
+    },
+    {
+      "before": "최상 중공",
+      "after": "모가미 중공",
+      "mode": "literal",
+      "japanese_any": [
+        "最上重工"
+      ],
+      "speaker_any": [
+        "最上重工"
+      ],
+      "expected_occurrences": 3,
+      "expected_records": 3,
+      "pdf": "1부",
+      "pages": [
+        30,
+        37
+      ]
+    },
+    {
+      "before": "슈퍼서울세이버",
+      "after": "슈퍼 소울 세이버",
+      "mode": "literal",
+      "japanese_any": [
+        "ソウルセイバー"
+      ],
+      "speaker_any": [
+        "ソウルセイバー"
+      ],
+      "expected_occurrences": 7,
+      "expected_records": 6,
+      "pdf": "1부",
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "before": "슈퍼 서울 세이버",
+      "after": "슈퍼 소울 세이버",
+      "mode": "literal",
+      "japanese_any": [
+        "ソウルセイバー"
+      ],
+      "speaker_any": [
+        "ソウルセイバー"
+      ],
+      "expected_occurrences": 2,
+      "expected_records": 2,
+      "pdf": "1부",
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "before": "서울세이버",
+      "after": "소울 세이버",
+      "mode": "literal",
+      "japanese_any": [
+        "ソウルセイバー"
+      ],
+      "speaker_any": [
+        "ソウルセイバー"
+      ],
+      "expected_occurrences": 26,
+      "expected_records": 22,
+      "pdf": "1부",
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "before": "서울 세이버",
+      "after": "소울 세이버",
+      "mode": "literal",
+      "japanese_any": [
+        "ソウルセイバー"
+      ],
+      "speaker_any": [
+        "ソウルセイバー"
+      ],
+      "expected_occurrences": 4,
+      "expected_records": 4,
+      "pdf": "1부",
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "before": "소울세이버",
+      "after": "소울 세이버",
+      "mode": "literal",
+      "japanese_any": [
+        "ソウルセイバー"
+      ],
+      "speaker_any": [
+        "ソウルセイバー"
+      ],
+      "expected_occurrences": 5,
+      "expected_records": 5,
+      "pdf": "1부",
+      "pages": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "before": "다이오저",
+      "after": "다이오쟈",
+      "mode": "literal",
+      "japanese_any": [
+        "ダイオージャ"
+      ],
+      "speaker_any": [
+        "ダイオージャ"
+      ],
+      "expected_occurrences": 35,
+      "expected_records": 31,
+      "pdf": "1부",
+      "pages": [
+        4,
+        26
+      ]
+    },
+    {
+      "before": "다이오져",
+      "after": "다이오쟈",
+      "mode": "literal",
+      "japanese_any": [
+        "ダイオージャ"
+      ],
+      "speaker_any": [
+        "ダイオージャ"
+      ],
+      "expected_occurrences": 2,
+      "expected_records": 2,
+      "pdf": "1부",
+      "pages": [
+        4,
+        26
+      ]
+    },
+    {
+      "before": "다이오자",
+      "after": "다이오쟈",
+      "mode": "literal",
+      "japanese_any": [
+        "ダイオージャ"
+      ],
+      "speaker_any": [
+        "ダイオージャ"
+      ],
+      "expected_occurrences": 18,
+      "expected_records": 18,
+      "pdf": "1부",
+      "pages": [
+        4,
+        26
+      ]
+    },
+    {
+      "before": "박싱거",
+      "after": "바쿠신거",
+      "mode": "literal",
+      "japanese_any": [
+        "バクシンガー"
+      ],
+      "speaker_any": [
+        "バクシンガー"
+      ],
+      "expected_occurrences": 45,
+      "expected_records": 42,
+      "pdf": "1부",
+      "pages": [
+        5,
+        24
+      ]
+    },
+    {
+      "before": "바쿠싱거",
+      "after": "바쿠신거",
+      "mode": "literal",
+      "japanese_any": [
+        "バクシンガー"
+      ],
+      "speaker_any": [
+        "バクシンガー"
+      ],
+      "expected_occurrences": 1,
+      "expected_records": 1,
+      "pdf": "1부",
+      "pages": [
+        5,
+        24
+      ]
+    },
+    {
+      "before": "짐승 전대",
+      "after": "수전기대",
+      "mode": "literal",
+      "japanese_any": [
+        "獣戦機隊"
+      ],
+      "speaker_any": [
+        "獣戦機隊"
+      ],
+      "expected_occurrences": 9,
+      "expected_records": 9,
+      "pdf": "1부",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "before": "짐승전대",
+      "after": "수전기대",
+      "mode": "literal",
+      "japanese_any": [
+        "獣戦機隊"
+      ],
+      "speaker_any": [
+        "獣戦機隊"
+      ],
+      "expected_occurrences": 2,
+      "expected_records": 2,
+      "pdf": "1부",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "before": "독수리는",
+      "after": "나는",
+      "mode": "literal",
+      "japanese_any": [
+        "ワシは"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 20,
+      "expected_records": 20,
+      "pdf": "1부",
+      "pages": [
+        4,
+        30
+      ]
+    },
+    {
+      "before": "독수리가",
+      "after": "내가",
+      "mode": "literal",
+      "japanese_any": [
+        "ワシが"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 25,
+      "expected_records": 25,
+      "pdf": "1부",
+      "pages": [
+        4,
+        30
+      ]
+    },
+    {
+      "before": "독수리의",
+      "after": "나의",
+      "mode": "literal",
+      "japanese_any": [
+        "ワシの"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 15,
+      "expected_records": 15,
+      "pdf": "1부",
+      "pages": [
+        4,
+        30
+      ]
+    },
+    {
+      "before": "즈이님",
+      "after": "즈이운 님",
+      "mode": "literal",
+      "japanese_any": [
+        "瑞雲"
+      ],
+      "speaker_any": [
+        "瑞雲"
+      ],
+      "expected_occurrences": 7,
+      "expected_records": 7,
+      "pdf": "1부",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "before": "즈이",
+      "after": "즈이운",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "瑞雲"
+      ],
+      "speaker_any": [
+        "瑞雲"
+      ],
+      "expected_occurrences": 15,
+      "expected_records": 12,
+      "pdf": "1부",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "before": "폭룡왕",
+      "after": "바쿠류오",
+      "mode": "literal",
+      "japanese_any": [
+        "バクリュウオー"
+      ],
+      "speaker_any": [
+        "バクリュウオー"
+      ],
+      "expected_occurrences": 39,
+      "expected_records": 36,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "바크류오",
+      "after": "바쿠류오",
+      "mode": "literal",
+      "japanese_any": [
+        "バクリュウオー"
+      ],
+      "speaker_any": [
+        "バクリュウオー"
+      ],
+      "expected_occurrences": 5,
+      "expected_records": 5,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "폭룡 드래곤",
+      "after": "바쿠류 드래곤",
+      "mode": "literal",
+      "japanese_any": [
+        "バクリュウドラゴン"
+      ],
+      "speaker_any": [
+        "バクリュウドラゴン"
+      ],
+      "expected_occurrences": 1,
+      "expected_records": 1,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "바쿠류드래곤",
+      "after": "바쿠류 드래곤",
+      "mode": "literal",
+      "japanese_any": [
+        "バクリュウドラゴン"
+      ],
+      "speaker_any": [
+        "バクリュウドラゴン"
+      ],
+      "expected_occurrences": 3,
+      "expected_records": 3,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "박류 드래곤",
+      "after": "바쿠류 드래곤",
+      "mode": "literal",
+      "japanese_any": [
+        "バクリュウドラゴン"
+      ],
+      "speaker_any": [
+        "バクリュウドラゴン"
+      ],
+      "expected_occurrences": 30,
+      "expected_records": 30,
+      "pdf": "1부",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "before": "공부",
+      "after": "츠토무",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "勉くん",
+        "勉！",
+        "勉？",
+        "勉、",
+        "勉は"
+      ],
+      "speaker_any": [
+        "勉"
+      ],
+      "expected_occurrences": 39,
+      "expected_records": 39,
+      "pdf": "1부",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "before": "벤",
+      "after": "츠토무",
+      "mode": "guarded_literal",
+      "japanese_any": [
+        "勉くん",
+        "勉！",
+        "勉？",
+        "勉、",
+        "勉は"
+      ],
+      "speaker_any": [
+        "勉"
+      ],
+      "expected_occurrences": 11,
+      "expected_records": 11,
+      "pdf": "1부",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "before": "사악한 짐승",
+      "after": "사악수",
+      "mode": "literal",
+      "japanese_any": [
+        "邪悪獣"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 56,
+      "expected_records": 50,
+      "pdf": "1부",
+      "pages": [
+        7,
+        30
+      ]
+    },
+    {
+      "before": "악한 짐승",
+      "after": "사악수",
+      "mode": "literal",
+      "japanese_any": [
+        "邪悪獣"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 7,
+      "expected_records": 7,
+      "pdf": "1부",
+      "pages": [
+        7,
+        30
+      ]
+    },
+    {
+      "before": "악마 짐승",
+      "after": "사악수",
+      "mode": "literal",
+      "japanese_any": [
+        "邪悪獣"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 2,
+      "expected_records": 2,
+      "pdf": "1부",
+      "pages": [
+        7,
+        30
+      ]
+    },
+    {
+      "before": "드래그너",
+      "after": "드라고나",
+      "mode": "literal",
+      "japanese_any": [
+        "ドラグナー"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 187,
+      "expected_records": 186,
+      "pdf": "1부",
+      "pages": [
+        6,
+        28
+      ]
+    },
+    {
+      "before": "드라그너",
+      "after": "드라고나",
+      "mode": "literal",
+      "japanese_any": [
+        "ドラグナー"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 60,
+      "expected_records": 59,
+      "pdf": "1부",
+      "pages": [
+        6,
+        28
+      ]
+    },
+    {
+      "before": "드라구나",
+      "after": "드라고나",
+      "mode": "literal",
+      "japanese_any": [
+        "ドラグナー"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 3,
+      "expected_records": 3,
+      "pdf": "1부",
+      "pages": [
+        6,
+        28
+      ]
+    },
+    {
+      "before": "드라고너",
+      "after": "드라고나",
+      "mode": "literal",
+      "japanese_any": [
+        "ドラグナー"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 1,
+      "expected_records": 1,
+      "pdf": "1부",
+      "pages": [
+        6,
+        28
+      ]
+    },
+    {
+      "before": "드라그나",
+      "after": "드라고나",
+      "mode": "literal",
+      "japanese_any": [
+        "ドラグナー"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 53,
+      "expected_records": 53,
+      "pdf": "1부",
+      "pages": [
+        6,
+        28
+      ]
+    },
+    {
+      "before": "저크",
+      "after": "자크",
+      "mode": "literal",
+      "japanese_any": [
+        "ジャーク"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 128,
+      "expected_records": 126,
+      "pdf": "1부",
+      "pages": [
+        7,
+        30
+      ]
+    },
+    {
+      "before": "쟈크",
+      "after": "자크",
+      "mode": "literal",
+      "japanese_any": [
+        "ジャーク"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 134,
+      "expected_records": 130,
+      "pdf": "1부",
+      "pages": [
+        7,
+        30
+      ]
+    },
+    {
+      "before": "아크・다르마",
+      "after": "아크다마",
+      "mode": "literal",
+      "japanese_any": [
+        "アークダーマ"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 9,
+      "expected_records": 8,
+      "pdf": "1부",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "before": "건・잼",
+      "after": "군 젬",
+      "mode": "literal",
+      "japanese_any": [
+        "グン・ジェム"
+      ],
+      "speaker_any": [
+        "グン・ジェム"
+      ],
+      "expected_occurrences": 58,
+      "expected_records": 58,
+      "pdf": "2부",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "before": "건 젬",
+      "after": "군 젬",
+      "mode": "literal",
+      "japanese_any": [
+        "グン・ジェム"
+      ],
+      "speaker_any": [
+        "グン・ジェム"
+      ],
+      "expected_occurrences": 2,
+      "expected_records": 2,
+      "pdf": "2부",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "before": "쿠와산・오리비",
+      "after": "쿠와산 올리비",
+      "mode": "literal",
+      "japanese_any": [
+        "クワサン・オリビー"
+      ],
+      "speaker_any": [
+        "クワサン・オリビー"
+      ],
+      "expected_occurrences": 1,
+      "expected_records": 1,
+      "pdf": "2부",
+      "pages": [
+        95,
+        96,
+        99
+      ]
+    },
+    {
+      "before": "쿠와산·오리비",
+      "after": "쿠와산 올리비",
+      "mode": "literal",
+      "japanese_any": [
+        "クワサン・オリビー"
+      ],
+      "speaker_any": [
+        "クワサン・オリビー"
+      ],
+      "expected_occurrences": 1,
+      "expected_records": 1,
+      "pdf": "2부",
+      "pages": [
+        95,
+        96,
+        99
+      ]
+    },
+    {
+      "before": "오리비",
+      "after": "올리비",
+      "mode": "literal",
+      "japanese_any": [
+        "オリビー"
+      ],
+      "speaker_any": [
+        "オリビー"
+      ],
+      "expected_occurrences": 4,
+      "expected_records": 4,
+      "pdf": "2부",
+      "pages": [
+        95,
+        96,
+        99
+      ]
+    },
+    {
+      "before": "세르주 오퍼스",
+      "after": "사제 오파스",
+      "mode": "literal",
+      "japanese_any": [
+        "サージェ・オーパス"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 3,
+      "expected_records": 3,
+      "pdf": "2부",
+      "pages": [
+        94,
+        96,
+        98
+      ]
+    },
+    {
+      "before": "라키시스의심장",
+      "after": "라키시스의 심장",
+      "mode": "literal",
+      "japanese_any": [
+        "ラキシスの心臓"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 4,
+      "expected_records": 4,
+      "pdf": "2부",
+      "pages": [
+        99
+      ]
+    },
+    {
+      "before": "고와핸드 별",
+      "after": "고와핸드 행성",
+      "mode": "literal",
+      "japanese_any": [
+        "ゴワハンド星"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 8,
+      "expected_records": 7,
+      "pdf": "2부",
+      "pages": [
+        91
+      ]
+    },
+    {
+      "before": "고와핸드성",
+      "after": "고와핸드 행성",
+      "mode": "literal",
+      "japanese_any": [
+        "ゴワハンド星"
+      ],
+      "speaker_any": [],
+      "expected_occurrences": 1,
+      "expected_records": 1,
+      "pdf": "2부",
+      "pages": [
+        91
+      ]
+    },
+    {
+      "before": "｣",
+      "after": "」",
+      "mode": "literal",
+      "japanese_any": [],
+      "speaker_any": [],
+      "expected_occurrences": 4,
+      "expected_records": 4,
+      "pdf": "translation-master-audit",
+      "pages": [
+        0
+      ]
+    }
+  ],
+  "payload_overrides": [
+    {
+      "id": "add02:b033:r0011:f0",
+      "japanese": "頭上の悪魔",
+      "before": "머리위악마",
+      "after": "머리 위의 악마",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 2,
+      "episode": 11,
+      "add00_block_index": 2746
+    },
+    {
+      "id": "add02:b033:r0012:f0",
+      "japanese": "オデッサ・デー",
+      "before": "오데사・데이",
+      "after": "오데사 데이",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 5,
+      "episode": 12,
+      "add00_block_index": 2749
+    },
+    {
+      "id": "add02:b033:r0014:f0",
+      "japanese": "ジャブロー攻防戦（前編）",
+      "before": "자브로 공방전（전편）",
+      "after": "자브로 공방전(전편)",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 8,
+      "episode": 14,
+      "add00_block_index": 2755
+    },
+    {
+      "id": "add02:b033:r0015:f0",
+      "japanese": "ジャブロー攻防戦（後編）",
+      "before": "자브로 공방전 (후편)",
+      "after": "자브로 공방전(후편)",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 10,
+      "episode": 15,
+      "add00_block_index": 2758
+    },
+    {
+      "id": "add02:b033:r0017:f0",
+      "japanese": "茶色の瞳に映るもの",
+      "before": "갈색 눈에 비친 것",
+      "after": "갈색 눈동자에 비치는 것",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 15,
+      "episode": 17,
+      "add00_block_index": 2764
+    },
+    {
+      "id": "add02:b033:r0018:f0",
+      "japanese": "ソロモン攻略戦（前編）",
+      "before": "솔로몬 공략전 (전편)",
+      "after": "솔로몬 공략전(전편)",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 18,
+      "episode": 18,
+      "add00_block_index": 2767
+    },
+    {
+      "id": "add02:b033:r0022:f0",
+      "japanese": "ディコイ・ディコイ",
+      "before": "디코이・디코이",
+      "after": "디코이 디코이",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 26,
+      "episode": 22,
+      "add00_block_index": 2779
+    },
+    {
+      "id": "add02:b033:r0025:f0",
+      "japanese": "旅立て！　銀河のミト王子",
+      "before": "대장정!은하의 미토 왕자",
+      "after": "여행하라! 은하의 미토 왕자",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 31,
+      "episode": 25,
+      "add00_block_index": 2788
+    },
+    {
+      "id": "add02:b033:r0026:f0",
+      "japanese": "揺れる惑星海",
+      "before": "요동의행성해",
+      "after": "흔들리는 혹성해",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 33,
+      "episode": 26,
+      "add00_block_index": 2791
+    },
+    {
+      "id": "add02:b033:r0027:f0",
+      "japanese": "ガストガル・デモ",
+      "before": "가스트갈 데모",
+      "after": "가스트갈 데모",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 35,
+      "episode": 27,
+      "add00_block_index": 2794
+    },
+    {
+      "id": "add02:b033:r0028:f0",
+      "japanese": "そして、地球へ",
+      "before": "그리고, 지구로",
+      "after": "그리고, 지구로",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 38,
+      "episode": 28,
+      "add00_block_index": 2797
+    },
+    {
+      "id": "add02:b033:r0029:f0",
+      "japanese": "駆け抜けた宇宙",
+      "before": "헤쳐나간 우주",
+      "after": "내달린 우주",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 41,
+      "episode": 29,
+      "add00_block_index": 2800
+    },
+    {
+      "id": "add02:b033:r0032:f0",
+      "japanese": "復活！　真ゲッターロボ",
+      "before": "부활!　진 겟타로보",
+      "after": "부활! 진 겟타 로보",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 49,
+      "episode": 32,
+      "add00_block_index": 2809
+    },
+    {
+      "id": "add02:b033:r0033:f0",
+      "japanese": "魔神降臨",
+      "before": "마신강림",
+      "after": "마신 강림",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 53,
+      "episode": 33,
+      "add00_block_index": 2812
+    },
+    {
+      "id": "add02:b033:r0034:f0",
+      "japanese": "グン・ジェム隊来襲",
+      "before": "군 젬 부대 내습",
+      "after": "군 젬 부대 습격",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 58,
+      "episode": 34,
+      "add00_block_index": 2815
+    },
+    {
+      "id": "add02:b033:r0036:f0",
+      "japanese": "グラドスの刻印",
+      "before": "그라도스의각인",
+      "after": "그라도스의 각인",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 64,
+      "episode": 36,
+      "add00_block_index": 2821
+    },
+    {
+      "id": "add02:b033:r0037:f0",
+      "japanese": "切り開け！　地球の未来",
+      "before": "개척하라! 지구의 미래",
+      "after": "헤쳐 나가라! 지구의 미래",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 67,
+      "episode": 37,
+      "add00_block_index": 2824
+    },
+    {
+      "id": "add02:b033:r0038:f0",
+      "japanese": "決戦！　炎の地獄城",
+      "before": "결전!불꽃의 지옥성",
+      "after": "결전! 불꽃의 지옥성",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 69,
+      "episode": 38,
+      "add00_block_index": 2827
+    },
+    {
+      "id": "add02:b033:r0039:f0",
+      "japanese": "蒼き鷹、再び",
+      "before": "푸른 매, 다시",
+      "after": "푸른 매, 다시 한 번",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 73,
+      "episode": 39,
+      "add00_block_index": 2830
+    },
+    {
+      "id": "add02:b033:r0040:f0",
+      "japanese": "宇宙要塞ア・バオア・クー",
+      "before": "우주요새 아 바오아 쿠",
+      "after": "우주 요새 아 바오아 쿠",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 77,
+      "episode": 40,
+      "add00_block_index": 2833
+    },
+    {
+      "id": "add02:b033:r0041:f0",
+      "japanese": "戦士、再び…",
+      "before": "전사,또다시",
+      "after": "전사, 다시",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 79,
+      "episode": 41,
+      "add00_block_index": 2836
+    },
+    {
+      "id": "add02:b033:r0042:f0",
+      "japanese": "野望の崩壊",
+      "before": "야망의붕괴",
+      "after": "야망의 붕괴",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 82,
+      "episode": 42,
+      "add00_block_index": 2839
+    },
+    {
+      "id": "add02:b033:r0043:f0",
+      "japanese": "歪む宇宙",
+      "before": "왜곡우주",
+      "after": "왜곡된 우주",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 85,
+      "episode": 43,
+      "add00_block_index": 2842
+    },
+    {
+      "id": "add02:b033:r0044:f0",
+      "japanese": "エドン国動乱",
+      "before": "에든국 동란",
+      "after": "에돈 국 동란",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 87,
+      "episode": 44,
+      "add00_block_index": 2845
+    },
+    {
+      "id": "add02:b033:r0045:f0",
+      "japanese": "みんなが王子を待っている！",
+      "before": "모두가 왕자를 기다린다!",
+      "after": "모두가 왕자를 기다리고 있어!",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 88,
+      "episode": 45,
+      "add00_block_index": 2848
+    },
+    {
+      "id": "add02:b033:r0046:f0",
+      "japanese": "ゴワハンド星ＳＯＳ",
+      "before": "고와핸드 행성ＳＯＳ",
+      "after": "고와핸드 행성 SOS",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 91,
+      "episode": 46,
+      "add00_block_index": 2851
+    },
+    {
+      "id": "add02:b033:r0047:f0",
+      "japanese": "アマンダラ・カマンダラ",
+      "before": "아만다라・카만다라",
+      "after": "아만다라 카만다라",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 94,
+      "episode": 47,
+      "add00_block_index": 2854
+    },
+    {
+      "id": "add02:b033:r0049:f0",
+      "japanese": "ドリーマーズ・アゲイン（前編）",
+      "before": "드리머즈 어게인 (전편)",
+      "after": "드리머즈 어게인(전편)",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 98,
+      "episode": 49,
+      "add00_block_index": 2860
+    },
+    {
+      "id": "add02:b033:r0050:f0",
+      "japanese": "ドリーマーズ・アゲイン（後編）",
+      "before": "드리머즈 어게인 (후편)",
+      "after": "드리머즈 어게인(후편)",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 101,
+      "episode": 50,
+      "add00_block_index": 2863
+    },
+    {
+      "id": "add02:b033:r0051:f0",
+      "japanese": "銀河の虎ガスコン",
+      "before": "은하호랑이가스콘",
+      "after": "은하의 호랑이 가스콘",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 103,
+      "episode": 51,
+      "add00_block_index": 2866
+    },
+    {
+      "id": "add02:b033:r0052:f0",
+      "japanese": "決戦！　移動要塞",
+      "before": "결전！　이동요새",
+      "after": "결전! 이동 요새",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 107,
+      "episode": 52,
+      "add00_block_index": 2869
+    },
+    {
+      "id": "add02:b033:r0053:f0",
+      "japanese": "嵐のザールへ、全艦出撃せよ！",
+      "before": "폭풍 속 자르로, 전함 출격!",
+      "after": "폭풍의 자르로! 전 함대 출격!",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 109,
+      "episode": 53,
+      "add00_block_index": 2872
+    },
+    {
+      "id": "add02:b033:r0054:f0",
+      "japanese": "ヌビアの狂乱",
+      "before": "누비아의광란",
+      "after": "누비아의 광란",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 112,
+      "episode": 54,
+      "add00_block_index": 2875
+    },
+    {
+      "id": "add02:b033:r0055:f0",
+      "japanese": "失われた者たちへの鎮魂歌",
+      "before": "사라진 자들의 진혼가",
+      "after": "잃어버린 자들에게 보내는 진혼가",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 115,
+      "episode": 55,
+      "add00_block_index": 2878
+    },
+    {
+      "id": "add02:b033:r0056:f0",
+      "japanese": "ガディソード前衛要塞",
+      "before": "가디소드 전위요새",
+      "after": "가디소드 전위 요새",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 118,
+      "episode": 56,
+      "add00_block_index": 2881
+    },
+    {
+      "id": "add02:b033:r0057:f0",
+      "japanese": "巨烈燃ゆ",
+      "before": "맹렬화염",
+      "after": "타오르는 거대한 열",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 121,
+      "episode": 57,
+      "add00_block_index": 2884
+    },
+    {
+      "id": "add02:b033:r0058:f0",
+      "japanese": "皇帝ワルーサを倒せ！！",
+      "before": "황제 와루사 타도!!",
+      "after": "황제 와루사를 쓰러뜨려라!",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 123,
+      "episode": 58,
+      "add00_block_index": 2887
+    },
+    {
+      "id": "add02:b033:r0059:f0",
+      "japanese": "灼熱の巨大要塞",
+      "before": "작열의거대요새",
+      "after": "작열의 거대 요새",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 125,
+      "episode": 59,
+      "add00_block_index": 2890
+    },
+    {
+      "id": "add02:b033:r0060:f0",
+      "japanese": "平和を守るために",
+      "before": "평화를지키기위해",
+      "after": "평화를 지키기 위해",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 125,
+      "episode": 60,
+      "add00_block_index": 2893
+    },
+    {
+      "id": "add02:b021:r0029:f0",
+      "japanese": "愛",
+      "before": "애",
+      "after": "사랑",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 22
+    },
+    {
+      "id": "add02:b025:r0009:f0",
+      "japanese": "アポジモーター",
+      "before": "어포지 모터",
+      "after": "아포지 모터",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 13
+    },
+    {
+      "id": "add02:b000:r0192:f0",
+      "japanese": "日向　仁",
+      "before": "히나타진",
+      "after": "휴우가 진",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 23
+    },
+    {
+      "id": "add02:b000:r0194:f0",
+      "japanese": "星山　吼児",
+      "before": "코우지",
+      "after": "호시야마 코우지",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 23
+    },
+    {
+      "id": "add02:b000:r0246:f0",
+      "japanese": "楯　剣人",
+      "before": "타테켄토",
+      "after": "타테 켄토",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 25
+    },
+    {
+      "id": "add02:b041:r0067:f3",
+      "japanese": "ティターンズが開発した汎用モビルスーツ。→一年戦争で活躍したＲＸ－７８ガンダムを再設計した→機体で、地球出身の技術者を中心に開発された。→装甲材等の問題もあり、試作機３機が投入された→だけにとどまるが、モビルスーツの装甲と内部構造を→分離するムーバブルフレームは後のモビルスーツ開発→（特に量産性）に大きな影響を与えた。→グリーン・ノア１でのテスト中に、エゥーゴの→クワトロ・バジーナやＭＰの尋問を受けていた→カミーユ・ビダンによって奪取され、アーガマ内で→塗装変更を受ける。→その後、カミーユがパイロットとして乗り込み、→ジャブロー攻略戦などで多大な戦果を→上げる事となる。→後にカミーユの発案で大気圏突入用のフライング・→アーマーが開発され、地上での高機動戦を可能にした。→（使用したのはジャブロー戦だけだったが…）→カミーユがＺガンダムに乗り換えた後はエマ・シーン→が搭乗し、「機動戦士ガンダムＺＺ」では主にエル・→ビアンノが搭乗した。→",
+      "before": "티탄즈가 개발한 범용 모빌슈트。→일년 전쟁에서 활약한 RX－７８ 건담을 재설계한 기체로、 지구 출신→의 기술자를 중심으로 개발되었다。→장갑재 등의 문제도 있어、 시제기 ３기만 투입되는 것에 그쳤지만、 모→빌슈트의 장갑과 내부 구조를 분리하는 무버블 프레임은 이후의 모비→일슈트 개발(특히 양산성)에 큰 영향을 주었다。→그린 노아１에서의 테스트 중、 에우고의 콰트로 바지나나 Ｍ→Ｐ의 심문을 받고 있던 카미유 비단에 의해 탈취되어、 아가마 내→에서 도색 변경을 받는다。→그 후、 카미유가 파일럿으로 탑승하여、 자브로 공략전 등→에서 막대한 전과를 올리게 된다。→후에 카미유의 발안으로 대기권 돌입용 플라잉 아머가 개발되어→지상에서의 고기동전을 가능하게 했다。→（사용한 것은 자브로전뿐이었지만…）→카미유가 Ｚ건담으로 갈아탄 후에는 에마 씬이 탑승했고、 「기동→전사 건담ＺＺ」에서는 주로 엘 비안노가 탑승했다。→단정한다。→이 박싱거가 은하열풍대 약진의 원동력이며、 「열」의 정신을 체→현하고 있다고 해도 과언이 아닐 것이다。→",
+      "after": "티탄즈가 개발한 범용 모빌슈트.→1년전쟁에서 활약한 RX-78 건담을 재설계한 기체로, 지구 출신 기술자들을 중심으로 개발되었다.→장갑재 등의 문제로 시제기 3기만 투입되었지만, 모빌슈트의 장갑과 내부 구조를 분리한 무버블 프레임은 이후 모빌슈트 개발, 특히 양산성에 큰 영향을 주었다.→그린 노아 1에서 시험하던 중 에우고의 콰트로 바지나와 MP의 심문을 받던 카미유 비단에게 탈취된 뒤, 아가마에서 도색을 바꿨다.→이후 카미유가 탑승해 자브로 공략전 등에서 큰 전과를 올렸다.→훗날 카미유의 제안으로 대기권 돌입용 플라잉 아머가 개발되어 지상에서 고기동전을 펼칠 수 있게 되었다.→실제로 사용된 것은 자브로전뿐이었지만…→카미유가 Z건담으로 갈아탄 뒤에는 에마 신이 탑승했고, 「기동전사 건담 ZZ」에서는 주로 엘 비안노가 탑승했다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b041:r0218:f3",
+      "japanese": "最上重工が秘密裏に開発した複座式の巨大ＭＷ（マル→チウォーカー）。→フェアリによって持ち込まれた開発途上の異星の機体→ソウルセイバーをベースに最上重工が総力を結集して→完成させた機体である。→だが動力源となるエネルギーに未知数な部分が多く、→危険回避のため、あえてリミッターをかけており、本→来のパワーは出せていない。→異星からの脅威に対抗すべく開発された本機の最大の→特徴は、上半身と下半身のパーツを入れ替える事で、→あらゆる戦況に対応できるブロックパーツ構想にある。→これにより、格闘戦タイプや砲撃戦タイプに特化した→機体チューニングが可能となった他、「パイロットの→サバイバビリティ向上」・「メンテナンス時間の短縮」→・「フレキシブルな新技術投入」などの利点が生まれ→ている。→本来は巨大すぎる出力を制御するため、２体のＭＷが→変形・合体する予定であったソウルセイバーの基本構→造に対して、地球側の技術陣から妥協案として提出さ→れたシステムであるが、結果的には開発効率の向上に→つながったと言えるだろう。→なおこの形態の正式名称は「ソウルセイバー・ファイ→ター・ファースト」。→高機動型近接攻撃タイプのソウルセイバーである。→",
+      "before": "모가미 중공이 비밀리에 개발한 복좌식의 거대 MW(멀티 워커)。→페어리에 의해 반입된 개발 중이던 이성의 기체 소울 세이버를→기반으로 모가미 중공이 총력을 기울여 완성시킨 기체이다。→하지만 동력원이 되는 에너지에 미지수인 부분이 많아、 위험 회피를 위해、→일부러 리미터를 걸어두고 있어、 본래의 파워는 내지 못하고 있다。→이성으로부터의 위협에 대항하기 위해 개발된 본 기체의 최대 특징은、 상반신과→하반신 부품을 교체함으로써、 모든 전황에 대응할 수 있는 블록→파츠 구상에 있다。→이를 통해、 격투전 타입이나 포격전 타입에 특화된 기체 튜닝→이 가능해진 것 외에、 「파일럿의 생존성 향상」・「정비→시간의 단축」・「유연한 신기술 투입」 등의 이점이 생겨→나고 있다。→본래는 너무나 거대한 출력을 제어하기 위해、 2대의 MW가 변형・합체할 예→정이었던 소울 세이버의 기본 구조에 비해、 지구측 기술진으로부터 타→협안으로 제시된 시스템이지만、 결과적으로는 개발 효율 향상에→기여했다고 할 수 있을 것이다。→참고로 이 형태의 정식 명칭은 「소울 세이버・파이터・퍼스트→」。→고기동형 근접 공격 타입의 소울 세이버이다。→발사하는 게타 빔을 최대의 무기→로 삼고 있다。→이진→소드로 상단에서 단번에 베어 가르는 갓 선더 크래시이다。→",
+      "after": "모가미 중공이 비밀리에 개발한 복좌식 거대 MW(멀티 워커).→페어리가 가져온 개발 중인 외계 기체 소울 세이버를 바탕으로 모가미 중공이 총력을 모아 완성했다.→동력원 에너지에 미지의 부분이 많아 위험을 피하려고 일부러 리미터를 걸었으며, 아직 본래의 출력을 내지 못한다.→외계의 위협에 맞서 개발된 이 기체의 가장 큰 특징은 상반신과 하반신 파츠를 바꾸어 모든 전황에 대응하는 블록 파츠 구상이다.→덕분에 격투전이나 포격전에 특화된 기체 튜닝이 가능하며, 파일럿의 생존성 향상, 정비 시간 단축, 유연한 신기술 도입 등의 이점도 얻었다.→본래 소울 세이버는 지나치게 큰 출력을 제어하기 위해 2기의 MW가 변형·합체하는 구조로 계획되었다.→이 시스템은 지구 기술진이 타협안으로 제시했지만, 결과적으로 개발 효율을 높였다고 할 수 있다.→이 형태의 정식 명칭은 「소울 세이버 파이터 퍼스트」.→고기동형 근접 공격 타입의 소울 세이버다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b040:r0182:f2",
+      "japanese": "原作ではエドン国の隣国であるボナンザ星の家老で、→ダイオージャ最後の敵となった。→領主を殺して国政を意のままにするのみに飽き足らず、→ミト王子の父トクガー王を陥れ、代わりにイプロン星→系の実権を握ろうとした。→そのために身分制度をなくすために立ち上がったと→虚言を弄して、革新を望む若者を騙し利用した悪人。→自分に従わない者に容赦せず、ダイオージャに恐れを→なして逃げようとする部下を粛清してしまう。→最後はダイオージャと相打ち寸前までいったが、爆発→の中から現れたのはダイオージャのみであった。→",
+      "before": "원작에서는 에돈국의 이웃나라인 보난자별의 가로로, →다이오쟈마지막의 적이 되었다. →영주를 죽이고 국정을 뜻대로 하는 것만으로 질리지 않고,→미토의 아버지토쿠가・왕를 빠뜨려, 대신에 프론성→계의 실권을 잡으려고 했다. →그 때문에 신분 제도를 없애기 위해 일어났다고→허언을 Fuck하여, 혁신을 바라는 젊은이를 속여 이용한 악인. →자신을 따르지 않는 자에게 용서하지 않고, 다이오쟈에게 두려움을→없음로 도망치려는 부하를 숙청해 버린다. →마지막은 다이오쟈과 상타 직전까지 갔지만, 폭발→안에서 나타난 것은 다이오쟈뿐이었다. →",
+      "after": "원작에서는 에돈 국의 이웃나라인 보난자 행성의 가로로, →다이오쟈 최후의 적이다. →영주를 살해하고 국정을 마음대로 휘두르는 데 그치지 않고, →미토 왕자의 아버지인 토쿠가 왕을 함정에 빠뜨려 그 대신 이프론 성계의 실권을 장악하려 했다. →이를 위해 신분 제도를 없애려고 봉기했다는 거짓말로 혁신을 바라는 젊은이들을 속여 이용했다. →자신에게 따르지 않는 자에게는 가차 없었으며, 다이오쟈를 두려워해 도망치려는 부하까지 숙청했다. →마지막에는 다이오쟈와 거의 동귀어진할 뻔했지만, 폭발 속에서 살아 나온 것은 다이오쟈뿐이었다. →",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add02:b040:r0061:f2",
+      "japanese": "ザビ家の長男であり、ジオン公国の実質的指導者。→ＩＱ２４０を誇り、それゆえか極端な選民思想と独裁→者的性格を持つ。→弟の死さえも戦意高揚の手段とする冷徹な戦略家でも→あり、父であるデギンをして「ヒトラーの尻尾」と評→さしめた。→地球連邦との和平交渉に向かったデギンを連邦の艦隊→もろともソーラ・レイで葬り去り、名実共にジオンの→支配者となるが、政敵でもある妹キシリアにア・バ→オア・クー攻防戦の最中に暗殺される。→",
+      "before": "자비 집의 장남이며 지온 공국의 실질적 지도자. →IQ240을 자랑하며 그러므로 극단적인 선민사상과 독재→자적 성격을 가진다. → 동생의 죽음조차도 전의 고양의 수단으로 하는 냉철한 전략가이기도 하고 → 있어, 아버지인 데긴을 하고 「히틀러의 꼬리」라고 평→보냈다. →지구연방과의 평화 교섭을 향한데긴을 연방의 함대→모두 솔라 __SRWG_00002 __로 장례식 떠나 명실공히 지온의→지배자가 되지만, 정적이기도 한 여동생키시리아에 아·바→오아·쿠 공방전의 도중에 암살된다. →",
+      "after": "자비 가문의 장남이자 지온 공국의 실질적인 지도자.→IQ 240을 자랑하며, 극단적인 선민사상과 독재자적 성격을 지녔다.→동생의 죽음마저 전의 고양에 이용하는 냉철한 전략가로, 아버지 데긴에게 「히틀러의 꼬리」라는 평까지 들었다.→지구연방과 평화 교섭을 하러 나선 데긴을 연방 함대와 함께 솔라 레이로 소멸시키고 명실상부한 지온의 지배자가 된다.→하지만 아 바오아 쿠 공방전 도중, 정적이기도 한 여동생 키시리아에게 암살당한다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b040:r0070:f2",
+      "japanese": "ルウム戦役で「黒い三連星」の捕虜になったが脱出し、→「ジオンに兵なし！」との演説で連邦の士気を高めた→という経歴を持つ連邦軍の大将。→早くからホワイトベース隊の能力に着目し、マチルダ→を送り込んで物資の補給をするなど支援していた。→オデッサ作戦を指揮してジオンの地上勢力を弱体化さ→せるなど、連邦に多くの勝利をもたらした名将であっ→たが、和平交渉に訪れたデギン公王もろともギレンの→ソーラ・レイに撃たれて死亡する。→",
+      "before": "루움 전역에서 「검은 삼연성」의 포로가 되었지만 탈출, → 「지온에게 병사없음!」라는 연설로 연방의 사기를 높였다 →라는 경력을 가진 연방군의 대장. → 일찍부터 화이트 베이스대의 능력에 주목해 마틸다→을 보내 물자의 보급를 하는 등 지원하고 있었다. →오데사 작전을 지휘해 지온의 지상세력을 약체화시키게 하는 등 연방에 많은 승리를 가져온 명장이었지만, → 평화협상에 방문한 데긴공왕도 기렌의 →소라 __SRWG_000 →",
+      "after": "루움 전역에서 「검은 삼연성」의 포로가 되었으나 탈출한 뒤, →「지온에 병사 없다!」는 연설로 연방군의 사기를 끌어올린 경력을 지닌 연방군 대장. →일찍부터 화이트 베이스대의 능력에 주목해 마틸다를 보내 물자를 보급하는 등 지원했다. →오데사 작전을 지휘해 지온의 지상 전력을 약화시키는 등 연방에 수많은 승리를 안겨 준 명장이었으나, →평화 교섭을 위해 찾아온 데긴 공왕과 함께 기렌의 솔라 레이에 맞아 사망한다. →",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b040:r0083:f2",
+      "japanese": "０８小隊所属のモビルスーツパイロット。→階級は軍曹。年齢２９歳。→ジオン軍との交戦で味方が壊滅状態になった時に、地→球の任地へ向かう途中であったシローが救援に駆けつ→け、命を救われる。→それが出会いとなり、シローと同じ０８小隊に配属さ→れる事になった。→所属している部隊が３回目の出撃で自分を残して全滅→するというジンクスから「死神」と呼ばれ、味方から→疎まれていたが、シローの運の強さにも助けられて→０８小隊で見事にジンクスを返上した。→根が真面目なだけに、相当気にしていたようである。→シローがスパイ容疑を掛けられた時には内密に監視す→るよう上層部から命じられるが、結局任務に従う事が→できずにシローに全てを話してしまうほどシローを信→頼している。→",
+      "before": "08소대 소속 모빌 슈트 파일럿. →계급은 군조. 나이 29세. →지온군과의 교전으로 아군이 괴멸 상태가 되었을 때, 땅→구의 임지로 향하는 도중이었던시로이 구원에 달려들→해, 생명을 구해진다. →그것이 만남이 되어, 시로와 같은 08소대에 배속되어→되는 것이 되었다. →소속하고 있는 부대가 3번째 출격으로 자신을 남기고 전멸→한다는 진쿠스에서 '사신'이라고 불리며 아군에게서 → 희미해졌지만, 시로의 운의 힘에도 도움을 받고 →08소대로 훌륭하게 __SRWG_0 →뿌리가 성실한 만큼 상당히 신경쓰고 있던 것 같다. →시로이 스파이 혐의를 걸렸을 때에는 내밀하게 감시한다→와 같이 상층부에서 명령받지만, 결국 임무에 따르는 것이→할 수 없고시로에 모든 것을 말해 버릴 정도로시로을 신→의지하고 있다. →",
+      "after": "08소대 소속 모빌슈트 파일럿. 계급은 중사, 29세.→지온군과의 교전으로 아군이 괴멸 상태에 빠졌을 때, 지구 부임지로 향하던 시로가 구원해 목숨을 건졌다.→이를 계기로 시로와 같은 08소대에 배속된다.→소속 부대가 세 번째 출격에서 자신만 남기고 전멸한다는 징크스 탓에 「사신」이라 불리며 아군에게 꺼림받았지만, 시로의 강한 운에도 힘입어 08소대에서 훌륭히 징크스를 깨뜨렸다.→워낙 성실한 성격이라 이 징크스를 상당히 신경 썼던 듯하다.→시로가 스파이 혐의를 받았을 때 상부로부터 몰래 감시하라는 명령을 받지만, 결국 임무를 따르지 못하고 시로에게 모든 것을 털어놓을 만큼 그를 신뢰한다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b040:r0137:f2",
+      "japanese": "国連宇宙体験学校のメンバー。→北欧出身の心優しき少女。少々引っ込み思案な性格。→仲間の中では最年少で、グラドス軍が火星を襲撃した→時は、まだ１４歳であった。→仲間内ではいつも子供扱いされていたためか、自分を→特別視しないエイジに心を惹かれ、誰もエイジの言葉→を信じなかった時も、ただ一人その言葉を信じていた。→それでもエイジに対して積極的にはなれず、自分とは→逆に積極的にエイジにアプローチするシモーヌに嫉妬→して自己嫌悪する事もあった。→エイジが地球を守るためにグレスコ艦隊に戦いを挑む→際、自分の想いを込めたヒナギクの花をエイジに渡し、→その言い伝えを語って聞かせるが、そんなアンナの→戻って来て欲しいという気持ちと裏腹にエイジは行方→不明となる。→グラドスが地球を占領した後は、デビッド達と協力し→レジスタンス活動を展開していた。→おとなしい性格から、襲撃に怯える日々が続くが、→次第に意志の強い女性へと育ち、いつしかレジスタン→スのシンボル的存在となっていた。→そんな折、行方不明であったエイジと再会し、一緒に→地球を解放に導くと共に、エイジとの長年の愛を結ぶ→事が出来た。→",
+      "before": "유엔우주체험학교의 회원. →북유럽 출신의 친절한 소녀. 조금 끌어들여 사안인 성격. → 동료 중에서는 최연소였고, 그라도스군이 화성을 습격했다 → 때는 아직 14세였다. → 동료 내에서는 언제나 아이 취급되고 있었기 때문인지, 자신을 → 특별시하지 않는 에이지에 마음을 끌려 아무도 에이지의 말→을 믿지 않았을 때도, 단 한 사람 그 말을 믿고 있었다. →그래도 에이지에 대해 적극적으로는 되지 못하고, 자신과는 반대로 적극적으로 에이지에 접근하는 시몬느에 질투→해서 자기 혐오하는 일도 있었다. →에이지가 지구을 지키기 위해 그레스코함대에 싸움을 도전한다→때, 자신의 마음을 담은 데이지의 꽃을__SRWG_00 004__에 건네주고→그 전설을 말해 들려주지만, 그런안나의→돌아와 주었으면 하는 마음과 뒤집어 에이지는 행방→불명이 된다. →그라도스가 지구을 점령한 뒤는 데이비드들과 협력해→레지스탕스 활동을 전개하고 있었다. →어머니 없음인 성격으로부터, 습격에 무서워하는 날들이 계속되는데, → 점차 의지가 강한 여성으로 자라, 언제밖에 레지스탕스의 심볼적 존재가 되고 있었다. →그런 때, 행방불명이었던에이지과 재회해, 함께→지구을 해방으로 이끄는 것과 동시에,에이지과의 오랜 사랑을 맺는→일 수 있었다. →",
+      "after": "유엔 우주 체험 학교의 일원.→북유럽 출신의 마음씨 고운 소녀로, 조금 내성적인 성격이다.→동료 중 최연소이며, 그라도스군이 화성을 습격했을 때는 아직 14세였다.→늘 어린아이 취급을 받아서인지 자신을 특별히 대하지 않는 에이지에게 마음이 끌렸고, 아무도 에이지의 말을 믿지 않을 때도 홀로 그를 믿었다.→그러면서도 에이지에게 적극적으로 다가가지 못해, 반대로 적극적으로 접근하는 시몬느를 질투하고 자책하기도 했다.→에이지가 지구를 지키기 위해 그레스코 함대에 맞서려 할 때 자신의 마음을 담은 데이지꽃을 건네며 그 전설을 들려준다.→돌아와 주길 바라는 안나의 마음과 달리 에이지는 행방불명된다.→그라도스가 지구를 점령한 뒤에는 데이비드 일행과 함께 레지스탕스 활동을 펼쳤다.→얌전한 성격 탓에 습격을 두려워하는 나날을 보냈지만, 점차 의지가 강한 여성으로 성장해 어느덧 레지스탕스의 상징적 존재가 된다.→그러던 중 행방불명이었던 에이지와 재회해 함께 지구를 해방으로 이끌고, 오랜 사랑의 결실도 맺는다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b040:r0143:f2",
+      "japanese": "ル・カイン率いる「死鬼隊」の一人。→「死鬼隊」の中で、一番がっしりした体型の隊員。→「バケモノ達」と言われる「死鬼隊」の名前の通り、→仮面の下の素顔は、フランケンシュタインのような容→貌をしている。→肉弾戦においては、その強靭な肉体から繰り出す怪力→により戦う。→レジスタンスの地球製ＳＰＴの秘密工場の壊滅作戦に→おいてレイズナーを取り逃し、愛機であるダンコフま→でも失ってしまったゲティは、ル・カインに命令され→たボーンとマンジェロによって殺されてしまう。→",
+      "before": "르·카이인이 이끄는 「사귀대」의 한명. →「사귀대」 중에서 가장 힘든 체형의 대원. → 「바케모노들」이라고 불리는 「사귀대」의 이름대로, → 가면 아래의 모습은 프랑켄슈타인과 같은 용→모습을 하고 있다. →육탄전에 있어서는, 그 강인한 육체로부터 내는 괴력→에 의해 싸운다. →레지스탕스의지구제 SPT의 비밀공장의 괴멸작전에→두고레이즈너을 놓치고 애기인__SRWG_000 03__마→에서도 잃어버린 게티는, 르·카이에 명령되어→한본느과 만제로에 의해 죽여 버린다. →",
+      "after": "루 카인이 이끄는 「사귀대」의 일원.→사귀대 중에서도 가장 다부진 체격을 지닌 대원이다.→「괴물들」이라 불리는 사귀대의 이름에 걸맞게, 가면 아래의 맨얼굴은 프랑켄슈타인 같은 용모를 하고 있다.→육탄전에서는 강인한 육체에서 나오는 괴력으로 싸운다.→레지스탕스가 운영하는 지구제 SPT 비밀 공장 괴멸 작전에서 레이즈너를 놓치고 애기 단코프마저 잃은 게티는, 루 카인의 명령을 받은 본과 만제로에게 살해당한다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b041:r0004:f3",
+      "japanese": "全長１．４ｋｍ、全高６００ｍにもおよぶ巨大戦艦。→獣戦機隊基地の地下で建造され、その崩壊と共に飛び→立った。→主武器であるガンドール砲は、ビームエネルギーを対→象に送り込むために使う事もできるため、その原理を→ダンクーガの断空剣に応用しての断空光牙剣や、ムゲ→宇宙にダンクーガを送り込む際にも使用された。→これは近年になって現実味を帯びてきたレーザー推進→の発展版と言えるだろう。→その他にも大型ビーム砲などで武装しているが、ガン→ドール砲発射の際には基地形態から戦闘形態への変形→が必要である。→３基の核融合炉による動力は起動から１８３日の稼動→にしか耐えられないという欠点を持つ。→",
+      "before": "전장 1.4km, 전고 600m에 달하는 거대 전함. →수전기대기지의 지하에서 건조되어 그 붕괴와 함께 날아간다→ 서 있었다. →주무기인 간도르포은 빔에너지를 대→코끼리에 보내기 위해 사용할 수도 있기 때문에 그 원리를→__SRWG_00003_ _의 단공검에 응용하여 단공광아검나 무게→우주에 단쿠가을 보내는데도 사용되었다. →이것은 근년이 되어 현실 맛을 띠고 온 레이저 추진→의 발전판이라고 말할 수 있을 것이다. →그 외에도대형 빔 포등으로 무장하고 있지만, 건→돌포 발사시에는기지형태에서 전투형태로의 변형→이 필요하다. →3기의 융합로에 의한 동력은 기동으로부터 183일의 가동→밖에 견딜 수 없다는 단점을 갖는다. →",
+      "after": "전장 1.4km, 전고 600m에 달하는 거대 전함.→수전기대 기지 지하에서 건조되었으며, 기지가 붕괴할 때 함께 날아올랐다.→주무기인 간도르 포는 빔 에너지를 대상에게 주입하는 용도로도 쓸 수 있어, 그 원리를 단쿠가의 단공검에 응용한 단공광아검이나 단쿠가를 무게 우주로 보낼 때에도 사용되었다.→이는 근래 현실성을 띠기 시작한 레이저 추진의 발전형이라 할 수 있다.→그 밖에도 대형 빔포 등으로 무장했지만, 간도르 포를 발사하려면 기지 형태에서 전투 형태로 변형해야 한다.→3기의 핵융합로가 내는 동력은 기동 후 183일 동안만 가동할 수 있다는 결점이 있다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b041:r0014:f3",
+      "japanese": "ブライ・シンクロン・アルファによって、ブライサン→ダーから変形するスライド変形の第２形態。→宇宙航行用の特殊飛行艇であり、大気圏突入も可能。→操縦はボウィー、システム・チーフはアイザック、→砲撃はキッド、通信その他はお町が担当する。→ブライサンダーからブライガーまで１０倍近くサイズ→が増大するブライ・シンクロンは、この宇宙の質量や→エネルギーを並行宇宙に預け、その投影像であるこの→宇宙の物体の拡大・縮小を自在に行なうというもので→ある。→",
+      "before": "브라이·싱크론·알파에 의해, 브라이산→다로부터 변형하는 슬라이드 변형의 제2 형태. →우주항행용 특수 비행정이며 대기권돌입도 가능. → 조종은 보위, 시스템 치프는 아이작, → 포격은 키드, 통신 그 외는 마치가 담당한다. →브라이 썬더에서 브라이거까지 10배 가까이사이즈→가 증가하는 브라이 싱크론은 이 __SRWG_00009 __의 질량이나 → 에너지를 병행우주에 맡기고, 그 투영상인 이→우주의 물체의 확대·축소를 자유자재로 행한다는 것으로→있다. →",
+      "after": "브라이 싱크론 알파에 의해 브라이 썬더에서 슬라이드 변형하는 제2형태.→우주 항행용 특수 비행정이며 대기권 돌입도 가능하다.→조종은 보위, 시스템 책임자는 아이작, 포격은 키드, 통신과 그 밖의 업무는 마치가 담당한다.→브라이 썬더에서 브라이거에 이르기까지 크기가 거의 10배로 커지는 브라이 싱크론은 이 우주의 질량과 에너지를 평행우주에 맡기고, 그 투영상인 이 우주의 물체를 자유롭게 확대·축소하는 기술이다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b041:r0045:f3",
+      "japanese": "一年戦争時にジオン軍が開発したモビルアーマー。→多数の大出力メガ粒子砲とＩフィールドを利用した→対ビーム・バリアを装備し、高い戦闘力を誇る。→しかし、機体冷却の問題により全力戦闘の継続時間は→２０分以下であった。→また、脚部は緊急時には切り離すことも可能。→ドズル指揮の下で、ソロモン防衛の切り札として戦線→に投入され、スレッガーのＧファイター（映画版では→コア・ブースター）、アムロのガンダムと戦った。→なお、量産化に成功していれば地球連邦軍本部がある→ジャブローへの侵攻作戦に使用されるはずであった。→",
+      "before": "일년 전쟁시에 지온군이 개발한 모빌 아머. →다수의 대출력메가입자포과 I필드를 이용한→대빔・배리어를 장비해, 높은 전투력을 자랑한다. → 그러나, 기체 냉각의 문제에 의해 전력 전투의 지속 시간은 →20분 이하였다. → 또한 다리는 긴급시에는 분리할 수 있습니다. →도즐지휘하에,솔로몬방어의 찰찰로서 전선→에 투입되어 슬레거의G 파이터(영화판에서는→코어・부스터),__SRWG_00040__전. → 덧붙여 양산화에 성공하고 있으면 지구 연방군 본부가 있다 → 자브로에의 침공 작전에 사용되는 것이었다. →",
+      "after": "1년전쟁 당시 지온군이 개발한 모빌아머.→다수의 고출력 메가입자포와 I필드를 이용한 대빔 배리어를 장비해 높은 전투력을 자랑한다.→하지만 기체 냉각 문제 때문에 전력 전투를 지속할 수 있는 시간은 20분 이하였다.→다리 부분은 비상시 분리할 수도 있다.→도즐의 지휘 아래 솔로몬 방어의 비장의 카드로 전선에 투입되어, 슬레거의 G파이터(극장판에서는 코어 부스터), 아무로의 건담과 싸웠다.→양산에 성공했다면 지구연방군 본부가 있는 자브로 침공 작전에 투입될 예정이었다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b041:r0069:f3",
+      "japanese": "スーパーガンダムの変形した形態で、この形態はスー→パーガンダム時より長距離移動に適している。→本来この形態ではＧディフェンサーのコクピットカプ→セルが付属しているのが正しいため、ゲームのように→自在に変形する事はない。→ＧディフェンサーとガンダムＭｋ－Ⅱが合体する時に→はＧディフェンサーのシリンダーが前進すると同時に→エンジンポッドがスライドし、サイドポンツーンが→下がり、マウントアップライトが上がった所にガンダ→ムＭｋ－Ⅱが下からスライドドッキングすると装着完→了となる。→",
+      "before": "슈퍼 건담의 변형된 형태로, 이 형태는 수→파건담시보다 장거리 이동에 적합하다. →본래 이 형태에서는 G디펜서의 콕핏캡→셀이 부속되어 있는 것이 맞기 때문에, 게임처럼→자재로 변형하는 일은 없다. →G디펜서와건담Mk-II가 합체할 때→는 G디펜서시린다-가 전진하는 동시에→엔__SRWG_00004_ _포드가 슬라이드, 사이드 폰툰이 → 내려, 마운트 업라이트가 오른 곳에 건다→무 Mk-II가 아래에서 슬라이드 도킹하면 장착 완→료가 된다. →",
+      "after": "슈퍼 건담이 변형한 형태로, 슈퍼 건담 상태보다 장거리 이동에 적합하다.→본래 이 형태에서는 G디펜서의 콕핏 캡슐이 붙어 있는 것이 맞으므로, 게임처럼 자유롭게 변형할 수는 없다.→G디펜서와 건담 Mk-II가 합체할 때는 G디펜서의 실린더가 전진하는 동시에 엔진 포드가 슬라이드하고, 사이드 폰툰이 내려가며 마운트 업라이트가 올라간다.→그 자리에 건담 Mk-II가 아래쪽에서 슬라이드 도킹하면 장착이 완료된다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b041:r0162:f3",
+      "japanese": "強力になってゆくジャーク帝国の戦力に対抗するため→出現したライジンオーのサポートメカ。→ベルゼブの罠にかかりピンチに陥った仁達を救う手段→を模索していた勉が、いい案が浮かばず投げ出しそう→になるも、マリアの叱咤激励により泣きながら調査を→再開し、一滴の涙がコンソールに落ちた時、バクリュ→ウオーは起動する事となった。→バクリュウドラゴンから「無敵変形」すると体のパー→ツが分割、再合体し本形態となる。→ライジンオーとは異なり司令部からの遠隔操縦となる。→マリアが操縦を担当し他の防衛組メンバーが各武器、→変形の担当をする。→武器は胸から放たれる光の手裏剣バクリュウカッター→などで、必殺武器は高威力を誇るバクリュウカノンで→ある。→なお、ドラゴンの首はバクリュウシールドになる。→",
+      "before": "강력해져가는 자크 제국의 전력에 대항하기 위해 → 출현한 라이징오의 서포트 메카. →벨제브의 함정에 걸려 핀치에 빠진 닌자들을 구하는 수단→을 모색하고 있던 공부가, 좋은 안이 떠오르지 않고 던질 것 같다→가 되는 것도,__SRWG_0 0004__의 꾸짖음격려에 의해 울면서 조사를→재개해, 한 방울의 눈물이 콘솔에 떨어졌을 때, 바크류→우는 기동하게 되었다. → 바쿠류 드래곤으로부터 「무적 변형」하면 몸의 파→트가 분할, 재합체해 본 형태가 된다. →라이징오와 달리 사령부로부터의 원격 조종이 된다. →마리아가 조종을 담당하고 다른 방위조 멤버가 각 무기→변형 담당을 한다. →무기는 가슴에서 발하는 빛의 수리검바쿠류 커터→등으로, 필살무기는 고위력을 자랑하는바쿠류 캐논로→있다. → 덧붙여 드래곤의 목은 바쿠류실드가 된다. →",
+      "after": "점점 강해지는 자크 제국의 전력에 맞서기 위해 나타난 라이징오의 지원 메카.→벨제브의 함정에 빠져 위기에 처한 진 일행을 구할 방법을 찾던 츠토무는 좋은 생각이 떠오르지 않아 포기하려 한다.→하지만 마리아의 질책과 격려에 눈물을 흘리며 조사를 재개하고, 눈물 한 방울이 콘솔에 떨어진 순간 바쿠류오가 기동한다.→바쿠류 드래곤에서 「무적 변형」하면 몸체가 여러 부분으로 분리된 뒤 다시 합체해 이 형태가 된다.→라이징오와 달리 사령부에서 원격 조종하며, 마리아가 조종을 맡고 다른 지구방위조 대원들이 각 무기와 변형을 담당한다.→무기는 가슴에서 쏘는 빛의 수리검 바쿠류 커터 등이 있으며, 필살 무기는 강력한 바쿠류 캐논이다.→드래곤의 목 부분은 바쿠류 실드가 된다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "add02:b041:r0190:f3",
+      "japanese": "兜十蔵博士が設計し、弓教授ら光子力研究所のスタッ→フにより製作されたスーパーロボット。→マジンガーＺとは設計者が同じという点でも兄弟機と→言える。→操縦者は剣鉄也で、ブレーンコンドルが、頭部にファ→イヤーオンして起動する。→Ｚと同様に超合金Ｚに身を包み、光子力エネルギーで→動くが、パワーは圧倒的にグレートの方が上である。→武器なども新しく追加されており、接近戦もこなせる→ように両足に内蔵されたマジンガーブレードや、両耳→から放電し人工的に落雷を起こして、電撃を敵に放つ→サンダーブレークなど、マジンガーＺにはない装備も→充実している。→",
+      "before": "카부토 쥬조 박사가 설계하고 유미 등 광자력연구소의 스태프에 의해 제작된 슈퍼 로봇. →마징가 Z이란 설계자가 같다는 점에서도 형제기라고 말할 수 있다. → 조종자는 검 테츠에서 브레인 콘도르가 머리에 파 → 이어 온하여 기동한다. →Z와 마찬가지로 초합금Z에 몸을 감싸고 광자력 에너지로 → 움직이지만, 파워는 압도적으로 그레이트가 위이다. →무기 등도 새롭게 추가되어 있어, 접근전도 해낼 수 있다→와 같이 양발에 내장된마징가 블레이드나, 양귀→로부터방전해 인공적으로 낙뢰를 일으켜, 전격을 적에게 발한다→썬더 브레이크등, __SRWG_000 →",
+      "after": "카부토 쥬조 박사가 설계하고 유미 교수 등 광자력 연구소 직원들이 제작한 슈퍼로봇.→마징가 Z와 설계자가 같다는 점에서도 형제기라 할 수 있다.→조종자는 츠루기 테츠야이며, 브레인 콘도르가 머리에 파이어 온해 기동한다.→마징가 Z처럼 초합금 Z 장갑을 두르고 광자력 에너지로 움직이지만, 출력은 그레이트 마징가가 압도적으로 높다.→새로운 무기도 다수 추가되어, 양다리에 내장된 마징가 블레이드로 근접전을 벌일 수 있다.→또한 양쪽 귀에서 방전해 인공 번개를 일으켜 적에게 전격을 내리꽂는 썬더 브레이크 등 마징가 Z에는 없는 장비도 충실하다.→",
+      "pdf": "translation-master-audit",
+      "page": 0
+    },
+    {
+      "id": "bpilot:p543.bin:r00278:t00",
+      "japanese": "「神々の試しのなかで生きていけぬ\n　ものどもには、これ以上の戦いは\n　無意味だとなぜ気づかんのだ」",
+      "before": "「신々시련으로 살 수 없다.\n사람들에게、더 이상의 싸움은\n무의미하다고 왜 깨닫지 못하는지」",
+      "after": "「신들의 시험 속에서 살아남지 못할\n자들에게는 더 이상의 싸움이\n무의미하다는 걸 왜 깨닫지 못하느냐」",
+      "pdf": "translation-master-audit",
+      "page": 0
+    }
+  ],
+  "dialogue_overrides": [
+    {
+      "id": "add01:0125:0000",
+      "japanese": "「あれから、木馬の動向はKK　どうなっている？」",
+      "before": "「그래서 목마의 동향은KK무슨 일이야? 」",
+      "after": "「그 뒤 목마의 동향은KK어떻게 됐나?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 2
+    },
+    {
+      "id": "add01:0125:0002",
+      "japanese": "「ただ、偵察と思われる部隊が、KK　我がジオンの武器実験場周辺をKK　嗅ぎ回っているようです」",
+      "before": "「단지, 정찰라고 생각되는 부대가,KK우리 지온의 무기 실험장 주변KK후회하는 것 같아요」",
+      "after": "「다만 정찰대로 보이는 부대가KK우리 지온군 무기 실험장 주변을KK정찰하고 있는 모양입니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 2
+    },
+    {
+      "id": "add01:0125:0004",
+      "japanese": "「なぜそう思う？」",
+      "before": "「왜 생각하나？」",
+      "after": "「왜 그렇게 생각하지?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 2
+    },
+    {
+      "id": "add01:0125:0006",
+      "japanese": "「でも、木馬が来ているのなら、KK　ガルマ様の仇を討つチャンスです」",
+      "before": "「그래도 목마가 온다면KK가르마님의 원수를 토벌할 기회입니다」",
+      "after": "「하지만 목마가 와 있다면KK가르마 님의 원수를 갚을 기회입니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 2
+    },
+    {
+      "id": "add01:0125:0007",
+      "japanese": "「そう急ぐな、ハモン。KK　我々も今は偵察が任務。KK　今のままでは戦力が足らん」",
+      "before": "「그렇게 서둘러, 하몬.KK우리도 지금은 정찰이 임무.KK지금 그대로는 전력이 부족하다」",
+      "after": "「서두르지 마라, 하몬.KK우리 임무는 지금 정찰이다.KK현재 전력으로는 부족해」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 2
+    },
+    {
+      "id": "add01:0125:0009",
+      "japanese": "「私の任務はガルマ様の仇討ち、KK　それも、ドズル中将からKK　直々の命令だ」",
+      "before": "「내 임무는 가르마 님의 처벌,KK그것도 도즐 중장에서KK바로 명령이다」",
+      "after": "「내 임무는 가르마 님의 원수를 갚는 것.KK그것도 도즐 중장께서KK직접 내리신 명령이다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 2
+    },
+    {
+      "id": "add01:0125:0015",
+      "japanese": "「やはり、KK　この形は砲撃跡ですね…」",
+      "before": "「역시,KK이 모양은 포격자리네요...」",
+      "after": "「역시,KK이 형상은 포격의 흔적이군요…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0016",
+      "japanese": "「ジオンはここで、KK　何かの射爆実験をKK　しているって事か…」",
+      "before": "「지온은 여기서KK무언가의 폭발 실험KK하고 있다는 건...」",
+      "after": "「지온이 여기서KK무언가 사격·폭격 실험을KK하고 있다는 건가…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0019",
+      "japanese": "「ガラス化した壁面を発見。KK　おそらく、ビームの通った跡です。KK　低空から水平に撃ったようですね…」",
+      "before": "「유리화된 벽면을 발견.KK아마도 빔가 지나간 흔적일 것입니다.KK저공에서 수평으로 쏜 것 같네요...」",
+      "after": "「유리화된 벽면을 발견.KK아마 빔이 지나간 흔적입니다.KK저공에서 수평으로 쏜 듯하군요…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0023",
+      "japanese": "「ねっ？　KK　わたしの仲間の情報、KK　正しかっただろ？」",
+      "before": "「응?KK내 동료 정보,KK맞았을까? 」",
+      "after": "「그렇지?KK내 동료가 준 정보,KK맞았지?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0026",
+      "japanese": "「へへ！　そうだぞ？KK　うんと感謝しろ！」",
+      "before": "「헤헤! 맞아?KK정말 고마워! 」",
+      "after": "「헤헤! 그렇지?KK나한테 잔뜩 고마워하라고!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0027",
+      "japanese": "「もう、ここまででいいぞ。KK　後は俺達でやる…。KK　キキは気をつけて帰ってくれ…」",
+      "before": "「이제, 여기까지 좋다.KK후에는 우리들로 한다....KK키키은 조심해서 돌아와줘...」",
+      "after": "「이제 여기까지만 와도 돼.KK나머지는 우리가 할게…KK키키는 조심해서 돌아가…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0029",
+      "japanese": "「…命の保証は出来ないぞ？」",
+      "before": "「...생명의 보증은 할 수 없어?」",
+      "after": "「…목숨은 보장 못 해」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0030",
+      "japanese": "「残るも去るもわたしの勝手だ！KK　好きにさせてもらうよ！」",
+      "before": "「남아도 떠나도 나의 마음이다!KK좋아하게 해줘! 」",
+      "after": "「남든 떠나든 내 마음이야!KK내 마음대로 할 거야!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0035",
+      "japanese": "「我が第０８小隊は、KK　ジオンの射爆実験場を発見」",
+      "before": "「우리 08소대은KK지온의 사폭 실험장을 발견」",
+      "after": "「우리 제08소대는KK지온의 사격·폭격 실험장을 발견」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0038",
+      "japanese": "「ホワイトベース、了解！　KK　詳細データを待つ！」",
+      "before": "「화이트 베이스, 이해!KK자세한 데이터를 기다리십시오! 」",
+      "after": "「화이트 베이스, 알았다!KK상세 데이터를 기다리겠다!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0042",
+      "japanese": "「我々の任務は一刻も早くKK　ジャブローに到達する事。KK　無用な戦いは避けるべきでは？」",
+      "before": "「우리의 임무는 일찍 빨리KK자브로에 도달하는 것.KK무용한 싸움은 피해야합니까? 」",
+      "after": "「우리 임무는 한시라도 빨리KK자브로에 도착하는 것.KK불필요한 전투는 피해야 하지 않겠습니까?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0043",
+      "japanese": "「既にホワイトベースは、KK　連邦軍部内で戦力としてKK　数えられています」",
+      "before": "「이미 화이트 베이스은KK연방군부 내에서 전력으로KK셀 수 있습니다.」",
+      "after": "「이미 화이트 베이스는KK연방군 내에서 정식 전력으로KK간주되고 있습니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0050",
+      "japanese": "「まず部隊を二つに分けます。KK　ホワイトベースの直掩部隊と、KK　基地施設への偵察兼、奇襲部隊です」",
+      "before": "「우선 부대를 둘로 나눕니다.KK화이트 베이스의 직관 부대와KK기지시설에 정찰 겸, 기습부대입니다」",
+      "after": "「우선 부대를 둘로 나눕니다.KK화이트 베이스의 근접 엄호 부대와KK기지 정찰을 겸한 기습 부대입니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0053",
+      "japanese": "「敵の反撃を想定した上でKK　対応できる直掩部隊は残します」",
+      "before": "「적의 반격을 상정한 후KK대응할 수 있는 나오사키 부대는 남깁니다」",
+      "after": "「적의 반격까지 고려해KK대응할 엄호 부대를 남기겠습니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0055",
+      "japanese": "「ぬかりはないというわけか。KK　了解した。その作戦で行こう」",
+      "before": "「누는 것은 없다는 건가.KK이해했다. 그 작전으로 가자」",
+      "after": "「빈틈은 없다는 거군.KK알겠다. 그 작전대로 가자」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0056",
+      "japanese": "「では早速、KK　詳細な作戦計画を練りKK　各部隊に通達します」",
+      "before": "「그럼,KK상세한 작전 계획을 반죽KK각 부대에 통달합니다」",
+      "after": "「그럼 즉시KK세부 작전 계획을 세워KK각 부대에 전달하겠습니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0061",
+      "japanese": "（敵の基地を攻撃…？KK　だとしたら、ジオン兵とKK　接触できるチャンスかも知れない）",
+      "before": "(적의 기지을 공격 ...?KK그렇다면 지온병과KK접촉 할 수있는 기회 일 수 있음)",
+      "after": "(적 기지를 공격…?KK그렇다면 지온 병사와KK접촉할 기회일지도 몰라)",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0125:0062",
+      "japanese": "（兄さんの事…。KK　聞けるかもしれない…）",
+      "before": "(형님의 일....KK들을 수 있을지도 모른다...)",
+      "after": "(오빠에 관한 일을…KK물을 수 있을지도 몰라…)",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 3
+    },
+    {
+      "id": "add01:0128:0000",
+      "japanese": "「別働隊が敵部隊と接触！KK　交戦中です！」",
+      "before": "「다른 작업대가 적 부대와 접촉!KK교전 중입니다! 」",
+      "after": "「별동대가 적 부대와 접촉!KK교전 중입니다!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0003",
+      "japanese": "「なに！？KK　まだ迎撃機の発進はKK　許可していないぞ！」",
+      "before": "「뭐!?KK아직 요격기의 발진은KK허용하지 않습니다! 」",
+      "after": "「뭐라고!?KK아직 요격기 발진은KK허가하지 않았다!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0004",
+      "japanese": "「ガンダムだと？KK　誰が乗っているんだ！？」",
+      "before": "「건담이라고?KK누가 타고 있어!?」",
+      "after": "「건담이라고?KK누가 타고 있는 거지!?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0005",
+      "japanese": "「セ、セイラさんです！」",
+      "before": "「세세이라 씨입니다」",
+      "after": "「세, 세이라 씨입니다!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0006",
+      "japanese": "「な、何だって？KK　まだ、セイラさんじゃ無理だ！KK　すぐに戻さないと！」",
+      "before": "「뭐, 뭐야?KK아직 세이라 씨는 무리입니다!KK곧 돌아 가지 않으면! 」",
+      "after": "「뭐, 뭐라고!?KK아직 세이라 씨에겐 무리야!KK당장 돌아오라고 해!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0007",
+      "japanese": "「ハ、ハッチが閉まらない…。KK　きゃっ、た、倒れる…！！」",
+      "before": "「하, 해치가 닫히지 않는다....KK꺄, 너, 쓰러진다...!!」",
+      "after": "「해, 해치가 닫히지 않아…KK꺄악, 쓰, 쓰러져…!!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0008",
+      "japanese": "「シミュレーションでKK　完全に覚えているはずなのに…」",
+      "before": "「시뮬레이션에서KK완전히 기억할 텐데...」",
+      "after": "「시뮬레이션으로KK완벽히 익혔을 텐데…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0009",
+      "japanese": "「でも、何としてもKK　ジオンの兵と接触しなければ…」",
+      "before": "「하지만 어쨌든KK지온의 병사와 접촉하지 않으면...」",
+      "after": "「하지만 어떻게든KK지온 병사와 접촉해야 해…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0010",
+      "japanese": "「まずい、こんな時に、KK　敵のモビルスーツが…！」",
+      "before": "「좋지 않아, 이런 때,KK적의 모빌 슈트가 ...! 」",
+      "after": "「이런, 하필 이때KK적의 모빌슈트가…!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0011",
+      "japanese": "「我々の作戦が読まれていた？」",
+      "before": "「우리 작전이 읽히고 있나？」",
+      "after": "「우리 작전이 읽힌 건가?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0012",
+      "japanese": "「いや…ちがうな…。KK　やつらの目的は、はじめからKK　この艦だったということです」",
+      "before": "「아니... 차이가....KK녀석들의 목적은 처음부터KK이 함이었다는 것입니다」",
+      "after": "「아니… 그렇지 않습니다…KK놈들의 목적은 처음부터KK이 함선이었던 겁니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0014",
+      "japanese": "「いや、大した戦力ではない。KK　こうなったら、KK　敵を一掃するだけです」",
+      "before": "「아니, 큰 전력이 아니다.KK이렇게 되면,KK적을 쓸어버릴 뿐입니다.」",
+      "after": "「아니, 대단한 전력은 아닙니다.KK이렇게 된 이상,KK적을 일소할 뿐입니다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0017",
+      "japanese": "「わかっている。KK　フラウ・ボウ！KK　アムロを独房から出せ！」",
+      "before": "「알고 있다.KK프라우 보우!KK아무로을 독방에서 꺼내라! 」",
+      "after": "「알고 있다.KK프라우 보우!KK아무로를 독방에서 꺼내라!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0020",
+      "japanese": "「ふん、なめられたものだ。KK　ハッチの修理ができぬままKK　出撃してくるとはな！」",
+      "before": "「응, 핥아진 것이다.KK해치 수리가 불가능한 채KK출격하면 좋지 않아! 」",
+      "after": "「흥, 얕보였군.KK해치도 수리하지 못한 채KK출격하다니!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0021",
+      "japanese": "「接触回線だ！KK　聞こえているだろう、アムロくん？」",
+      "before": "「접촉 회선이군！KK들리지、 아무로 군？」",
+      "after": "「접촉 회선이군!KK듣고 있겠지, 아무로 군?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0023",
+      "japanese": "「何…女！？」",
+      "before": "「뭐...여자!?」",
+      "after": "「뭐야… 여자!?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0026",
+      "japanese": "「動くな！！KK　ヘルメットを取り、KK　前に出て来い！」",
+      "before": "「움직이지 마!KK헬멧을 가지고,KK앞으로 나와! 」",
+      "after": "「움직이지 마!!KK헬멧을 벗고,KK앞으로 나와라!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0030",
+      "japanese": "「もしや、KK　あ、あなたは…KK　アルテイシア様か？」",
+      "before": "「만약,KK아, 넌...KK알 테이시아 님?」",
+      "after": "「설마,KK다, 당신은…KK아르테시아 님인가?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0032",
+      "japanese": "「間違いない…。KK　アルテイシア様にKK　間違いないな…？」",
+      "before": "「확실히 ....KK알 테이시아님께KK틀림없구나...?」",
+      "after": "「틀림없어…KK아르테시아 님이KK틀림없군…?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0036",
+      "japanese": "「アルテイシアと知って…KK　なぜ銃を向けるか！」",
+      "before": "「알테이시아라고 알아...KK왜 총을 향하는가! 」",
+      "after": "「아르테시아인 줄 알면서…KK왜 총을 겨누는 거냐!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0037",
+      "japanese": "「はっ…！KK　しかし、こんなモビルスーツにKK　お乗りに…」",
+      "before": "「하...!KK그러나 이런 모빌복에KK타고...」",
+      "after": "「헉…!KK하지만 이런 모빌슈트에KK타고 계시다니…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0039",
+      "japanese": "「セイラさん、下がるんだ…！KK　後はアムロがやる」",
+      "before": "「세이라 씨、 물러나！KK나머지는 아무로가 해」",
+      "after": "「세이라 씨, 물러나…!KK뒤는 아무로가 맡는다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0040",
+      "japanese": "「わ、わかったわ…」",
+      "before": "「알、알겠어요…」",
+      "after": "「아, 알았어…」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0042",
+      "japanese": "「セイラさん！　交替します！」",
+      "before": "「세이라 씨! 교체하겠습니다!」",
+      "after": "「세이라 씨! 교대하겠습니다!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0043",
+      "japanese": "「アムロ、頼んだわね？」",
+      "before": "「아무로잘 부탁할게」",
+      "after": "「아무로, 부탁할게」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0044",
+      "japanese": "「ハモン…すまぬ、KK　ザンジバルで木馬を撃破してくれ…。KK　私はここから援護する」",
+      "before": "「하몬...미안해,KK잔지바르로 목마를 격파해줘....KK여기에서 응원하겠다」",
+      "after": "「하몬… 미안하다.KK잔지바르로 목마를 격파해 줘…KK나는 여기서 엄호하겠다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0045",
+      "japanese": "「どうなさったのです？KK　あなた！」",
+      "before": "「무슨 일이야?KK너! 」",
+      "after": "「무슨 일이세요?KK당신!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0128:0047",
+      "japanese": "「いいな？KK　私の事は考えるな！」",
+      "before": "「좋아?KK내 일은 생각하지 마라! 」",
+      "after": "「알겠나?KK내 생각은 하지 마라!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0684:0001",
+      "japanese": "「オリビー！KK　聞こえるか！　オリビー！！」",
+      "before": "「올리비!KK들릴까! 올리비!!」",
+      "after": "「올리비!KK들리니? 올리비!!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0003",
+      "japanese": "「オリビー！KK　聞こえないのか！？KK　オリビー！！」",
+      "before": "「올리비!KK들리지 않는가!?KK올리비!!」",
+      "after": "「올리비!KK안 들리니!?KK올리비!!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0004",
+      "japanese": "「お兄ちゃんだよ！KK　なんで、俺とお前がKK　戦わなくちゃならないんだ？」",
+      "before": "「오빠 야!KK왜, 나와 너가KK싸워야 돼?」",
+      "after": "「오빠야!KK왜 나와 네가KK싸워야 하는 거야?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0012",
+      "japanese": "「世の中が混乱すればKK　悪しきウミが吐き出される」",
+      "before": "「세상이 혼란하면KK사악한 독기가 터져 나오지。」",
+      "after": "「세상이 혼란하면KK사악한 고름이 터져 나온다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0013",
+      "japanese": "「新たな世界をつくるためKK　常に混乱の渦はKK　起こさねばならんのだ」",
+      "before": "「새로운 세계를 만들기 위해KK항상 혼란의 소용돌이는KK일어나야 한다」",
+      "after": "「새로운 세상을 만들려면KK언제나 혼란의 소용돌이를KK일으켜야 한다」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0014",
+      "japanese": "「こ、これは…KK　ポセイダルの意思…？」",
+      "before": "「이, 이건...KK포세이달의 의사...?」",
+      "after": "「이, 이건…KK포세이달의 의지…?」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0015",
+      "japanese": "「ダバ！　オリビーの中にKK　ポセイダルがいるよぉ！」",
+      "before": "「다바! 올리비 안에KK포세이달이 있습니다! 」",
+      "after": "「다바! 올리비 안에KK포세이달이 있어!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0017",
+      "japanese": "「世を治めるためにはKK　常に正義だけを振りかざしてKK　いるわけにはいかぬ！」",
+      "before": "「세상을 다스리기 위해서는KK항상 정의만을 뿌리며KK있을 수는 없다! 」",
+      "after": "「세상을 다스리려면KK언제나 정의만 내세우고KK있을 수는 없다!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0018",
+      "japanese": "「ヤーマン族をKK　根絶やしにするのも、KK　そのためだというのか！」",
+      "before": "「야만족KK근절하는 것도,KK그 때문이야! 」",
+      "after": "「야만족을KK몰살한 것도,KK그 때문이란 말이냐!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0021",
+      "japanese": "「神の名を語り、人々をKK　コントロールするならば！KK　お前は完全な独裁者だ！！」",
+      "before": "「하나님의 이름을 말하고 사람들을KK통제한다면!KK너는 완전한 독재자다!!」",
+      "after": "「신의 이름을 빌려 사람들을KK조종한다면!KK너는 완전한 독재자다!!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0684:0025",
+      "japanese": "「オリビー！　お前をKK　ポセイダルの生贄にはさせない！KK　連れて帰る！！」",
+      "before": "「올리비! 너를KK포세이달의 제물을 만들지 마십시오!KK데리고 돌아간다!!」",
+      "after": "「올리비! 널KK포세이달의 제물로 삼게 두지 않겠어!KK반드시 데리고 돌아갈 거야!!」",
+      "pdf": "NGC 슈로봇대전 GC 2부.pdf",
+      "page": 96
+    },
+    {
+      "id": "add01:0030:0000",
+      "japanese": "「あんなので、踏み荒らされちゃKK　避難シェルターだって危ない。KK　ここは、負けられないな…」",
+      "before": "「그래서 밟아 버려져.KK피난 쉼터도 위험하다.KK이건 잃을 수 없어...」",
+      "after": "「저런 것들이 제멋대로 짓밟고 다니면KK대피소도 위험해.KK여기서 질 수는 없어…」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 31
+    },
+    {
+      "id": "add01:0030:0003",
+      "japanese": "「あんなので、踏み荒らされたんじゃKK　避難シェルターがもたないかも…。KK　ここは、負けられないわね…」",
+      "before": "「그래서 밟아 버렸다.KK피난 쉼터가 없을지도 ....KK이건 잃을 수 없어...」",
+      "after": "「저런 것들이 제멋대로 짓밟고 다니면KK대피소가 버티지 못할지도 몰라…KK여기서 질 수는 없어…」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 31
+    },
+    {
+      "id": "add01:0030:0014",
+      "japanese": "「でも、気になるわね…。KK　もう少し、この街で調査をKK　続けた方が良いかもしれない…」",
+      "before": "「하지만 궁금하네....KK좀 더이 도시에서 조사KK계속하는 것이 더 좋을지도 모른다 ... 」",
+      "after": "「하지만 신경 쓰이네…KK이 마을에서 조금 더 조사를KK계속하는 편이 좋을지도 몰라…」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 31
+    },
+    {
+      "id": "add01:0037:0002",
+      "japanese": "「くそっ！KK　キリがないよ！」",
+      "before": "「젠장!KK아무것도 없어! 」",
+      "after": "「젠장!KK끝이 없잖아!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 32
+    },
+    {
+      "id": "add01:0037:0003",
+      "japanese": "「どうするっ！？　仁っ！KK　このままじゃ…」",
+      "before": "「어떻게 해!? 진!KK이대로는...」",
+      "after": "「어떡하지!? 진!KK이대로는…」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 32
+    },
+    {
+      "id": "add01:0044:0031",
+      "japanese": "「タップ！KK　お前は、そこの大砲付きな？」",
+      "before": "「탭!KK너는 거기에 대포가 있니? 」",
+      "after": "「탭!KK넌 저 대포 달린 걸 타!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 34
+    },
+    {
+      "id": "add01:0044:0035",
+      "japanese": "「この優越感がたまらないねえ」",
+      "before": "「이 우월감이 견딜 수 없어」",
+      "after": "「이 우월감, 끝내주는데!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 34
+    },
+    {
+      "id": "add01:0049:0020",
+      "japanese": "「一応、KK　ソウルセイバーのパイロットだ。KK　よろしくな！」",
+      "before": "「일단,KK소울 세이버의 조종사다.KK감사합니다! 」",
+      "after": "「일단,KK소울 세이버의 파일럿이야.KK잘 부탁해!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 35
+    },
+    {
+      "id": "add01:0049:0033",
+      "japanese": "「ソウルセイバーのパイロットよ。KK　よろしくね！」",
+      "before": "「소울 세이버의 파일럿이야.KK감사합니다! 」",
+      "after": "「소울 세이버의 파일럿이야.KK잘 부탁해!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 35
+    },
+    {
+      "id": "add01:0114:0009",
+      "japanese": "「ワシはザールからKK　エリオスを守るため、KK　ダルタニアスを造った…」",
+      "before": "「나는 자르에서KK엘리오스를 보호하기 위해,KK달타니어스을 만들었다...」",
+      "after": "「나는 자르로부터KK엘리오스를 지키기 위해,KK달타니어스를 만들었다…」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0114:0056",
+      "japanese": "「それと、KK　獣戦機隊とダルタニアスをKK　君たちの部隊に編入する」",
+      "before": "「그리고KK수전기대와 달타니어스KK너희들의 부대에 편입한다」",
+      "after": "「그리고,KK수전기대와 달타니어스를KK너희 부대에 편입한다」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 6
+    },
+    {
+      "id": "add01:0343:0044",
+      "japanese": "「王子、KK　この上はダイオージャで！」",
+      "before": "「왕자,KK이 위는 다이오쟈에서! 」",
+      "after": "「왕자님,KK이렇게 된 이상 다이오쟈로!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 4
+    },
+    {
+      "id": "add01:0343:0079",
+      "japanese": "「銀河烈風バクシンガー、参る！」",
+      "before": "「은하 열풍 바쿠신거, 참가!」",
+      "after": "「은하열풍 바쿠신거, 나간다!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 5
+    },
+    {
+      "id": "add01:0409:0008",
+      "japanese": "「さあ、行くぞ！　吼児！KK　あんなの、返り討ちにKK　してやろうぜ！」",
+      "before": "「자, 가자! 코우지!KK그런거야, 돌이켜KK하자! 」",
+      "after": "「자, 간다! 코우지!KK저런 녀석,KK되받아쳐 주자고!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 23
+    },
+    {
+      "id": "add01:0410:0008",
+      "japanese": "「吼児くんの言う通りよ！KK　仁！　ライジンオーをKK　合体させるわ！」",
+      "before": "「코우지 군이 말한대로!KK진! 라이징오KK합체하겠습니다! 」",
+      "after": "「코우지 군 말이 맞아!KK진! 라이징오를KK합체시킬게!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 23
+    },
+    {
+      "id": "add01:0202:0065",
+      "japanese": "「いや…獣戦機隊、Ｊ９、それにKK　ダルタニアスが配備されているのはKK　外宇宙を意識しての事だ」",
+      "before": "「아니... 수전기대, J9, 게다가KK달타니어스이 배포되는 것은KK밖우주을 의식하고 있는 일이다」",
+      "after": "「아니… 수전기대, J9, 그리고KK달타니어스가 배치된 것은KK외우주를 염두에 둔 것이다」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 6
+    },
+    {
+      "id": "add01:0421:0006",
+      "japanese": "「これじゃ、KK　倒しても、倒しても、KK　キリがない！」",
+      "before": "「이건,KK쓰러뜨려도, 쓰러뜨려도,KK아무것도 없다! 」",
+      "after": "「이래서는,KK쓰러뜨려도 또 쓰러뜨려도,KK끝이 없어!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 32
+    },
+    {
+      "id": "add01:0291:0000",
+      "japanese": "「くそっ！KK　また増援部隊かよ！KK　きりがないぜ…」",
+      "before": "「젠장!KK다시 증원 부대인가!KK확실하지 않아...」",
+      "after": "「젠장!KK또 증원 부대냐!KK끝이 없잖아…」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 32
+    },
+    {
+      "id": "add01:0062:0000",
+      "japanese": "「よし、回収班！KK　敵機の捕獲作業に入れ！」",
+      "before": "「좋아, 회수반!KK적기의 포획 작업에 넣어! 」",
+      "after": "「좋아, 회수반!KK적기 포획 작업에 착수하라!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 36
+    },
+    {
+      "id": "add01:0062:0004",
+      "japanese": "「戦闘中も機体回収班をKK　常に待機させておけ」",
+      "before": "「전투 중에도 기체 회수반KK항상 기다리겠습니다.」",
+      "after": "「전투 중에도 기체 회수반을KK항상 대기시켜라」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 36
+    },
+    {
+      "id": "add01:0071:0128",
+      "japanese": "「赤い彗星でも、なんでもKK　どんと来いってんだ！」",
+      "before": "「붉은혜성에서도 무엇이든KK얼마나 오고있어! 」",
+      "after": "「붉은 혜성이든 뭐든KK얼마든지 덤비라지!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 37
+    },
+    {
+      "id": "add01:0000:0071",
+      "japanese": "ああ・・・ああ・・・そうだ。KKジオン、ギガノス、連邦の不穏分子に対して・・",
+      "before": "디온, 기가노스, 연방의 불온 분자에 대하여 ··",
+      "after": "지온, 기가노스, 연방의 불온분자에 대해…",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 30
+    },
+    {
+      "id": "add01:0049:0021",
+      "japanese": "「一応、KK　ソウルガンナーのパイロットだ。KK　よろしくな！」",
+      "before": "「일단,KK소울 건너의 파일럿이다.KK감사합니다! 」",
+      "after": "「일단,KK소울 건너의 파일럿이야.KK잘 부탁해!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 35
+    },
+    {
+      "id": "add01:0049:0034",
+      "japanese": "「ソウルガンナーのパイロットよ。KK　よろしくね！」",
+      "before": "「소울 건너의 파일럿이야.KK감사합니다! 」",
+      "after": "「소울 건너의 파일럿이야.KK잘 부탁해!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 35
+    },
+    {
+      "id": "add01:0071:0082",
+      "japanese": "「あたしは、エンジェルお町。KK　よろしくね？　艦長さん？」",
+      "before": "「나는 천사마치.KK고마워? 함장 씨? 」",
+      "after": "「난 엔젤 마치야.KK잘 부탁해, 함장님?」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 37
+    },
+    {
+      "id": "add01:0207:0003",
+      "japanese": "「それから、KK　私の事はクリスでいいわ。KK　よろしくね、アムロ少尉」",
+      "before": "「그럼KK내 일은 크리스입니다.KK고마워, 아무로 소위」",
+      "after": "「그리고,KK난 크리스라고 불러도 돼.KK잘 부탁해, 아무로 소위」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 40
+    },
+    {
+      "id": "add01:0342:0112",
+      "japanese": "「佐馬之介・ドーディ。KK　人はかっとびの佐馬と呼ぶ。KK　よろしくお見知りおきを」",
+      "before": "「사마 노스케 도디.KK남자는 가두비의 사마이라고 칭한다.KK감사합니다.」",
+      "after": "「사마노스케 도디.KK사람들은 날 쾌속의 사마라고 부르지.KK잘 알아 두라고」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 40
+    },
+    {
+      "id": "add01:0501:0005",
+      "japanese": "「あたし、エルピー・プル、よろしく！」",
+      "before": "「나, 엘 피 · 플, 감사합니다!」",
+      "after": "「난 엘피 플이야. 잘 부탁해!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 40
+    },
+    {
+      "id": "add01:0938:0028",
+      "japanese": "「そうかい…。KK　ま、これからもKK　よろしくな！」",
+      "before": "「그런....KK음, 앞으로도KK감사합니다! 」",
+      "after": "「그런가…KK뭐, 앞으로도KK잘 부탁한다!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 40
+    },
+    {
+      "id": "add01:0989:0432",
+      "japanese": "「みんな、KK　これからもよろしくね？」",
+      "before": "「모두,KK앞으로도 고마워요? 」",
+      "after": "「다들,KK앞으로도 잘 부탁해」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 40
+    },
+    {
+      "id": "add01:1112:0010",
+      "japanese": "「僕はカミーユって言うんだ。KK　よろしく！」",
+      "before": "「나는 카미유이라고 말한다.KK감사합니다! 」",
+      "after": "「나는 카미유라고 해.KK잘 부탁해!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 40
+    },
+    {
+      "id": "add01:0989:0221",
+      "japanese": "「ダバ！KK　村の連中によろしくKK　言っといてくれよな！」",
+      "before": "「다바!KK마을 사람들에게 감사드립니다.KK말해줘! 」",
+      "after": "「다바!KK마을 사람들에게 안부 좀KK전해 줘!」",
+      "pdf": "NGC 슈로봇대전 GC 1부.pdf",
+      "page": 40
+    }
+  ],
+  "expected_payload_override_count": 59,
+  "expected_dialogue_override_count": 95,
+  "expected_changed_record_count": 2778
+}
