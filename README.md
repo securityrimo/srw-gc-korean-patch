@@ -86,6 +86,7 @@ PowerShell에서 직접 실행할 수도 있습니다.
 - `tools/apply_spirit_command_corrections.py`: 정신기 이름·축약·설명을 일본판 안정 ID로 교정하고 30·30·29건의 대응을 검사하는 도구
 - `tools/patch_episode_title_graphics.py`: 허용된 시나리오 제목 BMP만 고정 레이아웃으로 다시 그리는 도구
 - `docs/기술_문서.md`: 패치 구조와 검증 절차
+- [번역 JSON 수정 가이드](docs/번역_JSON_수정_가이드.md): 대사·메뉴·도감·정신기 번역을 수정할 JSON과 안정 ID 작성 방법
 - `docs/UI_이미지_패치.md`: 메뉴·타이틀·로딩 이미지의 재패킹 방식과 재현값
 - `data/`: UI 이미지 매핑, PDF 번역 품질 교정 및 정신기 안정 ID 교정 JSON
 - `APPLY_PATCH.bat`, `apply_patch.ps1`: Windows용 패치 적용 도구
