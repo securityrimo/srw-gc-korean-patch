@@ -24,7 +24,32 @@ JAPANESE_RE = re.compile(
     r"[々ぁ-ゖァ-ヺ㐀-鿿ｦ-ﾟ]"
 )
 STRUCTURE_TOKENS = ("<AA>", "<FF>", "<TT>")
-LINE_WIDTH_LIMITS = {"add01": 20, "bpilot": 24, "add02": 40, "dol": 40}
+# Measured on the real hardware: the dialogue window draws 18 cells per line --
+# the 「 and 」 count -- and 3 lines per screen. The Japanese retail text agrees:
+# 866 of 883 add01 blocks keep every line at or under 18, and bpilot's widest
+# retail line is 19. The earlier 20/24 values were guesses and shipped overflow
+# in v1.0.6, so these are now the limits.
+LINE_WIDTH_LIMITS = {"add01": 18, "bpilot": 18, "add02": 40, "dol": 40}
+MAX_DIALOGUE_LINES = 3
+# Scenes whose retail text is itself wider than the dialogue window, so the
+# window there is demonstrably wider too. Block 0 is the speakerless prologue
+# narration (retail runs to 25 cells); the rest each hold a single 19-cell
+# retail line. Measured from the Japanese master, and matched by dialogue_fit --
+# the two must agree or a rewrap and its validation would contradict.
+WIDE_ADD01_BLOCKS = {
+    0: 25,
+    96: 19, 124: 19, 138: 19, 202: 19, 226: 19, 353: 19, 364: 19, 366: 19,
+    378: 19, 480: 19, 501: 19, 571: 19, 583: 19, 598: 19, 820: 19, 1039: 19,
+}
+# A runtime name token is drawn as a pilot name; budget it at the widest
+# canonical given name so a passing line cannot overflow once substituted.
+TOKEN_CELLS = 4
+
+
+def display_cells(text: str) -> int:
+    for token in STRUCTURE_TOKENS:
+        text = text.replace(token, "￿" * TOKEN_CELLS)
+    return len(text)
 
 
 def load_json(path: Path):
@@ -147,8 +172,16 @@ def main() -> int:
             else:
                 separator = "\n"
                 current_lines = current.split(separator)
-                if len(lines) > len(current_lines):
-                    fail(f"line count {len(lines)} > current {len(current_lines)}")
+                budget = len(current_lines)
+                if family == "bpilot":
+                    # The legacy translation CSV stored many battle lines as one
+                    # unbroken cell, so the Korean carries fewer lines than the
+                    # Japanese it replaces and runs past the window -- one line
+                    # reached 82 cells. Restoring the breaks is the fix, so allow
+                    # up to the layout the retail record itself uses.
+                    budget = max(budget, len(record.get("japanese", "").split(separator)))
+                if len(lines) > budget:
+                    fail(f"line count {len(lines)} > budget {budget}")
                     continue
                 if any("\n" in l or "\r" in l for l in lines):
                     fail("newline inside a line")
@@ -175,18 +208,27 @@ def main() -> int:
                 width_limit = lib_payload.MAX_COLUMNS
             else:
                 width_limit = LINE_WIDTH_LIMITS[family]
-                display_lines = (
-                    new_payload.split("KK")
-                    if family == "add01"
-                    else new_payload.split("\n")
-                )
-            for display_line in display_lines:
-                stripped = display_line
-                for token in STRUCTURE_TOKENS:
-                    stripped = stripped.replace(token, "??")
-                if len(stripped) > width_limit:
+                if family == "add01":
+                    # The speaker is drawn in its own name box, so only the
+                    # corrected body lines are measured against the window.
+                    display_lines = lines
+                    width_limit = max(
+                        width_limit, WIDE_ADD01_BLOCKS.get(record.get("block"), 0)
+                    )
+                else:
+                    display_lines = new_payload.split("\n")
+                if family == "add01" and len(display_lines) > MAX_DIALOGUE_LINES:
+                    # bpilot is deliberately excluded: a handful of retail battle
+                    # records use 4-5 lines, so its budget is the per-record
+                    # Japanese layout checked above, not this window.
                     problems.append(
-                        f"line width {len(stripped)} > {width_limit}: {display_line!r}"
+                        f"{len(display_lines)} lines > {MAX_DIALOGUE_LINES}-line window"
+                    )
+            for display_line in display_lines:
+                width = display_cells(display_line)
+                if width > width_limit:
+                    problems.append(
+                        f"line width {width} > {width_limit}: {display_line!r}"
                     )
             if "__SRWG_" in new_payload:
                 problems.append("internal placeholder present")

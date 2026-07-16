@@ -1,6 +1,6 @@
 {
   "schema": "srw-gc-korean-release-v1",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "game": {
     "title": "슈퍼로봇대전 GC",
     "region": "Japan",
@@ -12,13 +12,13 @@
   },
   "result": {
     "size": 1459978240,
-    "sha256": "BB949E7BA003FA3D124343695627FDEF0EAE25E81D5B9E1FC7524F42000D26DB"
+    "sha256": "C1CCEA5FF63BD717E57E1EB3820C8D10C6B377C3456C92CE4C28C4EA6A21A3ED"
   },
   "patch": {
-    "filename": "SRW_GC_Korean_v1.0.6.xdelta",
+    "filename": "SRW_GC_Korean_v1.0.7.xdelta",
     "format": "VCDIFF/xdelta3",
-    "size": 109488610,
-    "sha256": "68112BF2476592DE1B08C36EB1A5BB3B95A5FD2EF8D42B4D239552948DB28623",
+    "size": 109491718,
+    "sha256": "1138CB1EC488024C86A2226D81E23B1232E540D78D85B6EDD863BA13ACD55A40",
     "secondary_compressor": "lzma",
     "application_header": false
   },
@@ -81,6 +81,15 @@
     "mt_quality_reviewed_targets": 21430,
     "mt_quality_speaker_prefix_damage": 0,
     "mt_quality_qa_sample": 220,
-    "mt_quality_qa_serious_findings": 0
+    "mt_quality_qa_serious_findings": 0,
+    "dialogue_window_max_columns": 18,
+    "dialogue_window_max_lines": 3,
+    "dialogue_window_fitted_records": 4252,
+    "dialogue_window_fitted_story_records": 576,
+    "dialogue_window_fitted_battle_records": 3676,
+    "dialogue_window_checked_story_records": 22378,
+    "dialogue_window_checked_battle_records": 35319,
+    "dialogue_window_overflow_lines": 0,
+    "dialogue_window_line_count_violations": 0
   }
 }

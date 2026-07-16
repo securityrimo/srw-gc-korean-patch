@@ -44,6 +44,15 @@ def main() -> int:
     parser.add_argument("maps_root", type=Path)
     parser.add_argument("codebook", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument(
+        "--include-all",
+        action="store_true",
+        help=(
+            "emit every record, not just the machine-translated ones. Needed when "
+            "validating a change that also touches human-translated records, such "
+            "as fitting existing dialogue to the text window."
+        ),
+    )
     args = parser.parse_args()
 
     out = args.output
@@ -163,7 +172,7 @@ def main() -> int:
         fam = r.get("family")
         if fam not in families:
             continue
-        if str(r.get("translation_source", "")) not in MACHINE_SOURCES:
+        if not args.include_all and str(r.get("translation_source", "")) not in MACHINE_SOURCES:
             continue
         stable_id = r["id"]
         payload = id_to_payload.get(stable_id)
